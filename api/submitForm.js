@@ -3,15 +3,15 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+sendgrid.setApiKey('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');
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { firstName, lastName, budget, website, message } = req.body;
 
         const emailMessage = {
-            to: process.env.EMAIL_TO, // Your receiving email
-            from: process.env.EMAIL_FROM, // Your verified SendGrid email
+            to: 'ryan@wixenco.com', // Your receiving email
+            from: 'ryan@wixenco.com', // Your verified SendGrid email
             subject: 'New Contact Form Submission',
             text: `You have a new contact form submission from ${firstName} ${lastName}.\n\nBudget: ${budget}\nWebsite: ${website}\nMessage: ${message}`,
         };
