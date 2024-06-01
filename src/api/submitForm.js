@@ -5,9 +5,11 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { firstName, lastName, budget, website, message } = req.body;
 
-        // Create a transporter object using the default SMTP transport
+        // Create a transporter object using Outlook's SMTP transport
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
+            host: 'smtp.office365.com', // Outlook SMTP server
+            port: 587,
+            secure: false, // true for 465, false for other ports
             auth: {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS,
@@ -36,3 +38,4 @@ export default async function handler(req, res) {
         res.status(405).end(`Method ${req.method} Not Allowed`);
     }
 }
+
