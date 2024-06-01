@@ -20,7 +20,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('/api/submitForm', {
+            const response = await fetch('https://www.wixenco.com/api/submitForm', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
