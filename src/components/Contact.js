@@ -1,8 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        budget: '',
+        website: '',
+        message: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('/api/submitForm', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const data = await response.json();
+            alert(data.message);
+        } catch (error) {
+            console.error('There was a problem with the form submission:', error);
+        }
+    };
+
     return (
-        <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div id="contact" className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
             <svg
                 className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
@@ -33,31 +71,35 @@ export default function Contact() {
                     Ready to elevate your digital presence? Reach out today for tailored solutions in web design, SEO, chatbots, and Google services!
                 </p>
                 <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-                    <form action="#" method="POST" className="lg:flex-auto">
+                    <form onSubmit={handleSubmit} className="lg:flex-auto">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
-                                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="firstName" className="block text-sm font-semibold leading-6 text-gray-900">
                                     First name
                                 </label>
                                 <div className="mt-2.5">
                                     <input
                                         type="text"
-                                        name="first-name"
-                                        id="first-name"
+                                        name="firstName"
+                                        id="firstName"
+                                        value={formData.firstName}
+                                        onChange={handleChange}
                                         autoComplete="given-name"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="lastName" className="block text-sm font-semibold leading-6 text-gray-900">
                                     Last name
                                 </label>
                                 <div className="mt-2.5">
                                     <input
                                         type="text"
-                                        name="last-name"
-                                        id="last-name"
+                                        name="lastName"
+                                        id="lastName"
+                                        value={formData.lastName}
+                                        onChange={handleChange}
                                         autoComplete="family-name"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
@@ -72,6 +114,8 @@ export default function Contact() {
                                         id="budget"
                                         name="budget"
                                         type="text"
+                                        value={formData.budget}
+                                        onChange={handleChange}
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
@@ -85,6 +129,8 @@ export default function Contact() {
                                         type="url"
                                         name="website"
                                         id="website"
+                                        value={formData.website}
+                                        onChange={handleChange}
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
@@ -94,13 +140,14 @@ export default function Contact() {
                                     Message
                                 </label>
                                 <div className="mt-2.5">
-                  <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      defaultValue={''}
-                  />
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        rows={4}
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -131,6 +178,7 @@ export default function Contact() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
+
 

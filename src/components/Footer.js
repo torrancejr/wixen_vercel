@@ -1,7 +1,7 @@
 const navigation = {
     main: [
         { name: 'Home', href: '/' },
-        { name: 'Blog', href: '#' },
+        { name: 'Blog', href: '/blog' },
         // { name: 'Jobs', href: '#' },
         // { name: 'Press', href: '#' },
         // { name: 'Accessibility', href: '#' },
@@ -94,7 +94,7 @@ export default function Footer() {
                     ))}
                 </div>
                 <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-                    &copy; 2020 Your Company, Inc. All rights reserved.
+                    &copy; 2024 WixenCo, Inc. All rights reserved.
                 </p>
             </div>
         </footer>

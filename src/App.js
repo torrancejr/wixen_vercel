@@ -5,6 +5,7 @@ import ContactMe from './components/Contact';
 import LatestProject from './features/LatestProject';
 import Blog from './features/Blog/Blog';
 import Counter from './features/Counter';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -26,6 +27,9 @@ export default function App() {
           </div>
           <div className="blog">
               <Blog />
+          </div>
+          <div className="footer">
+              <Footer />
           </div>
       </div>
   )

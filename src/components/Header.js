@@ -3,10 +3,9 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '#' },
+    { name: 'Blog', href: '/blog' }
 ]
 
 export default function Example() {
@@ -18,8 +17,11 @@ export default function Example() {
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
-                        <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-                    </a>
+                        <img
+                            className="h-32 w-auto lg:h-44"
+                            src="https://wixenco.s3.amazonaws.com/wix-logo.png"
+                            alt=""
+                        /> </a>
                 </div>
                 <div className="flex lg:hidden">
                     <button

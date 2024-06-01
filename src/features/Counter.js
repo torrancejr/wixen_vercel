@@ -1,10 +1,10 @@
-import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/20/solid'
-import { CursorArrowRaysIcon, EnvelopeOpenIcon, UsersIcon } from '@heroicons/react/24/outline'
+import React from 'react';
+import { Battery100Icon, RocketLaunchIcon, FaceSmileIcon } from '@heroicons/react/24/outline'
 
 const stats = [
-    { id: 1, name: 'Cups of Coffee', stat: '725', icon: UsersIcon, change: '122', changeType: 'increase' },
-    { id: 2, name: 'Happy Customers', stat: '12', icon: EnvelopeOpenIcon, change: '5.4%', changeType: 'increase' },
-    { id: 3, name: 'Sites Launched', stat: '10', icon: CursorArrowRaysIcon, change: '3.2%', changeType: 'decrease' },
+    { id: 1, name: 'Cups of Coffee', stat: '725', icon: Battery100Icon, change: '122', changeType: 'increase' },
+    { id: 2, name: 'Happy Customers', stat: '12', icon: FaceSmileIcon, change: '5.4%', changeType: 'increase' },
+    { id: 3, name: 'Sites Launched', stat: '10', icon: RocketLaunchIcon, change: '3.2%', changeType: 'decrease' },
 ]
 
 function classNames(...classes) {
