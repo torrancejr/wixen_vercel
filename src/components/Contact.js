@@ -8,6 +8,8 @@ export default function Contact() {
         website: '',
         message: '',
     });
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -19,6 +21,9 @@ export default function Contact() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setError('');
+        setSuccess('');
+
         try {
             const response = await fetch('https://www.wixenco.com/api/submitForm', {
                 method: 'POST',
@@ -29,13 +34,13 @@ export default function Contact() {
             });
 
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error(`Network response was not ok: ${response.statusText}`);
             }
 
             const data = await response.json();
-            alert(data.message);
+            setSuccess(data.message);
         } catch (error) {
-            console.error('There was a problem with the form submission:', error);
+            setError(`There was a problem with the form submission: ${error.message}`);
         }
     };
 
@@ -159,6 +164,8 @@ export default function Contact() {
                                 Let’s talk
                             </button>
                         </div>
+                        {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
+                        {success && <p className="mt-4 text-sm text-green-600">{success}</p>}
                     </form>
                     <div className="lg:mt-6 lg:w-80 lg:flex-none">
                         <figure className="mt-10">
@@ -180,5 +187,6 @@ export default function Contact() {
         </div>
     );
 }
+
 
 
