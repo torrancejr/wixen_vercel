@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+sendgrid.setApiKey(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);
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
