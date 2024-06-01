@@ -25,7 +25,7 @@ export default function Contact() {
         setSuccess('');
 
         try {
-            const response = await fetch('https://www.wixenco.com/api/submitForm', {
+            const response = await fetch('/api/submitForm', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
