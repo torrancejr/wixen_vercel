@@ -4,16 +4,15 @@ import React from 'react';
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
 const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
+    { name: 'Contact Me', href: '#' },
+    { name: 'Services', href: '#' },
+    { name: 'Testimonials', href: '#' },
+    { name: 'Blog', href: '#' },
 ]
 
-export default function Example() {
+export default function Home() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
@@ -21,11 +20,11 @@ export default function Example() {
             <header className="absolute inset-x-0 top-0 z-50">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
-                        <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
+                        <a href="/" className="-m-1.5 p-1.5">
+                            <span className="sr-only">WixenCo</span>
                             <img
-                                className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                className="h-32 w-auto lg:h-44"
+                                src="https://wixenco.s3.amazonaws.com/wix-logo.png"
                                 alt=""
                             />
                         </a>
@@ -48,20 +47,17 @@ export default function Example() {
                         ))}
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                            Log in <span aria-hidden="true">&rarr;</span>
-                        </a>
                     </div>
                 </nav>
                 <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                     <div className="fixed inset-0 z-50" />
                     <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                         <div className="flex items-center justify-between">
-                            <a href="#" className="-m-1.5 p-1.5">
-                                <span className="sr-only">Your Company</span>
+                            <a href="/" className="-m-1.5 p-1.5">
+                                <span className="sr-only">WixenCo</span>
                                 <img
                                     className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                    src="https://wixenco.s3.amazonaws.com/wix-logo.png"
                                     alt=""
                                 />
                             </a>
@@ -86,14 +82,6 @@ export default function Example() {
                                             {item.name}
                                         </a>
                                     ))}
-                                </div>
-                                <div className="py-6">
-                                    <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                    >
-                                        Log in
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -129,29 +117,21 @@ export default function Example() {
                 <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                         <div className="flex">
-                            <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                <span className="font-semibold text-indigo-600">We’re hiring</span>
-                                <span className="h-4 w-px bg-gray-900/10" aria-hidden="true" />
-                                <a href="#" className="flex items-center gap-x-1">
-                                    <span className="absolute inset-0" aria-hidden="true" />
-                                    See open positions
-                                    <ChevronRightIcon className="-mr-2 h-5 w-5 text-gray-400" aria-hidden="true" />
-                                </a>
-                            </div>
+
                         </div>
                         <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                            A better way to ship your projects
+                            A <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-purple-500">Freelance</span> Web Developer Crafting Websites That Tell Your Story
+
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Esse id magna consectetur fugiat non dolor in ad laboris magna laborum ea consequat. Nisi irure aliquip
-                            nisi adipisicing veniam voluptate id. In veniam incididunt ex veniam adipisicing sit.
+                            I specialize in creating unique, tailored websites that effectively communicate your brand's narrative and engage your audience.
                         </p>
                         <div className="mt-10 flex items-center gap-x-6">
                             <a
                                 href="#"
                                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
-                                Get started
+                                Contact Me
                             </a>
                             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                                 Learn more <span aria-hidden="true">→</span>
@@ -180,7 +160,7 @@ export default function Example() {
                                 transform="translate(24 24)"
                                 clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                             >
-                                <img src="https://tailwindui.com/img/component-images/mobile-app-screenshot.png" alt="" />
+                                <img src="https://wixenco.s3.amazonaws.com/wixen-phone2.png" alt="" />
                             </foreignObject>
                         </svg>
                     </div>
