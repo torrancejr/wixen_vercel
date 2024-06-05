@@ -6,6 +6,9 @@ import BlogHome from './features/Blog/BlogHome';
 import Tailwind from './features/Blog/articles/TailwindBlog';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-1707PEGC4M');
 
 const router = createBrowserRouter([
     { path: '/', element: <App /> },
