@@ -16,7 +16,7 @@ export default function Home() {
     return (
         <div className="bg-white">
             <header className="absolute inset-x-0 top-0 z-50">
-                <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
                         <a href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">WixenCo</span>
@@ -82,7 +82,7 @@ export default function Home() {
                 </Dialog>
             </header>
 
-            <div className="relative isolate pt-14">
+            <div className="relative isolate pt-4 sm:pt-14">
                 <svg
                     className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                     aria-hidden="true"
@@ -107,7 +107,7 @@ export default function Home() {
                     </svg>
                     <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
                 </svg>
-                <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
+                <div className="mx-auto max-w-7xl px-6 py-16 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                         <div className="flex">
 
@@ -131,7 +131,7 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-                    <div className="hidden sm:block mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                    <div className="hidden sm:block mt-8 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                         <svg viewBox="0 0 366 729" role="img" className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl">
                             <title>App screenshot</title>
                             <defs>
@@ -157,7 +157,7 @@ export default function Home() {
                             </foreignObject>
                         </svg>
                     </div>
-                    <div className="block sm:hidden mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                    <div className="block sm:hidden mt-8 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                         <img src="https://wixenco.s3.amazonaws.com/moonman.svg" alt="Moonman" className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl" />
                     </div>
                 </div>
