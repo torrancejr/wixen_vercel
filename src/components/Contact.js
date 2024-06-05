@@ -4,6 +4,8 @@ export default function Contact() {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
+        email: '',
+        phone: '',
         budget: '',
         website: '',
         message: '',
@@ -25,7 +27,7 @@ export default function Contact() {
         setSuccess('');
 
         try {
-            const response = await fetch('https://www.wixenco.com/api/submitForm', {
+            const response = await fetch('https://wixenco-api.herokuapp.com/contact_forms', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -111,6 +113,38 @@ export default function Contact() {
                                 </div>
                             </div>
                             <div>
+                                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                                    Email
+                                </label>
+                                <div className="mt-2.5">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        autoComplete="email"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-gray-900">
+                                    Phone
+                                </label>
+                                <div className="mt-2.5">
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        id="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        autoComplete="tel"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    />
+                                </div>
+                            </div>
+                            <div>
                                 <label htmlFor="budget" className="block text-sm font-semibold leading-6 text-gray-900">
                                     Budget
                                 </label>
@@ -187,6 +221,8 @@ export default function Contact() {
         </div>
     );
 }
+
+
 
 
 
