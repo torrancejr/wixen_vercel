@@ -41,6 +41,17 @@ export default function Contact() {
 
             const data = await response.json();
             setSuccess(data.message);
+
+            // Reset the form
+            setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                phone: '',
+                budget: '',
+                website: '',
+                message: '',
+            });
         } catch (error) {
             setError(`There was a problem with the form submission: ${error.message}`);
         }
