@@ -1,24 +1,22 @@
 // src/components/Home.js
-import React from 'react';
-
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import React, { useState } from 'react';
+import { Dialog, DialogPanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
     { name: 'Contact Me', href: '#contact' },
     { name: 'Services', href: '#services' },
     // { name: 'Testimonials', href: '#' },
     { name: 'Blog', href: '/blog' },
-]
+];
 
 export default function Home() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
         <div className="bg-white">
             <header className="absolute inset-x-0 top-0 z-50">
-                <nav className="flex items-center justify-between p-24 lg:px-8" aria-label="Global">
+                <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
                         <a href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">WixenCo</span>
@@ -133,7 +131,7 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-                    <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                    <div className="hidden sm:block mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
                         <svg viewBox="0 0 366 729" role="img" className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl">
                             <title>App screenshot</title>
                             <defs>
@@ -159,8 +157,12 @@ export default function Home() {
                             </foreignObject>
                         </svg>
                     </div>
+                    <div className="block sm:hidden mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+                        <img src="https://wixenco.s3.amazonaws.com/moonman.svg" alt="Moonman" className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl" />
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
+
