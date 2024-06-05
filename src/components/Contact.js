@@ -27,7 +27,7 @@ export default function Contact() {
         setSuccess('');
 
         try {
-            const response = await fetch('https://wixenco-api.herokuapp.com/contact_forms', {
+            const response = await fetch('https://wixenco-api-2ee861916a31.herokuapp.com/contact_forms', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
