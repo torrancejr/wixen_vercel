@@ -93,8 +93,8 @@ function SiteAnalysisForm() {
                             </blockquote>
                             <figcaption className="mt-10 flex gap-x-6">
                                 <div>
-                                    <div className="text-base font-semibold text-gray-900">Tom K.</div>
-                                    <div className="text-sm leading-6 text-gray-600">Owner of Wyatt Elevator</div>
+                                    <div className="text-base font-semibold text-gray-900">Brittany T.</div>
+                                    <div className="text-sm leading-6 text-gray-600">Marketing Director at Wyatt Elevator</div>
                                 </div>
                             </figcaption>
                         </figure>
