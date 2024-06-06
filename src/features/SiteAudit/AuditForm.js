@@ -5,17 +5,21 @@ function SiteAnalysisForm() {
     const [url, setUrl] = useState('');
     const [results, setResults] = useState(null);
     const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         setError('');
         setResults(null);
+        setLoading(true);
 
         try {
             const response = await axios.post('https://wixenco-api-2ee861916a31.herokuapp.com/analyze', { url });
             setResults(response.data);
         } catch (error) {
             setError('There was a problem analyzing the site. Please try again.');
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -62,6 +66,11 @@ function SiteAnalysisForm() {
                                 Analyze Website
                             </button>
                         </div>
+                        {loading && (
+                            <div className="mt-4 flex justify-center">
+                                <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-indigo-600"></div>
+                            </div>
+                        )}
                         {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
                         {results && (
                             <div className="mt-10">
