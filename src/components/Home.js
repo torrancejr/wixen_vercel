@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 const navigation = [
     { name: 'Contact Me', href: '#contact' },
     { name: 'Services', href: '#services' },
-    // { name: 'Testimonials', href: '#' },
+    { name: 'Free Site Analysis', href: '/site-analysis' },
     { name: 'Blog', href: '/blog' },
 ];
 
@@ -15,7 +15,7 @@ export default function Home() {
 
     return (
         <div className="bg-white">
-            <header className="absolute inset-x-0 top-0 z-50">
+            <header className="absolute inset-x-0 top-0 z-50 lg:top-8">
                 <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
                         <a href="/" className="-m-1.5 p-1.5">
@@ -70,7 +70,7 @@ export default function Home() {
                                         <a
                                             key={item.name}
                                             href={item.href}
-                                            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                            className="-mx-3 block rounded-lg px-3 py-2 text-base lg:text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                         >
                                             {item.name}
                                         </a>
@@ -165,4 +165,3 @@ export default function Home() {
         </div>
     )
 }
-

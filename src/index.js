@@ -5,6 +5,7 @@ import App from './App';
 import BlogHome from './features/Blog/BlogHome';
 import Tailwind from './features/Blog/articles/TailwindBlog';
 import reportWebVitals from './reportWebVitals';
+import SiteAudit from "./features/SiteAudit/SiteAudit";
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import ReactGA from 'react-ga4';
 
@@ -13,6 +14,7 @@ ReactGA.initialize('G-1707PEGC4M');
 const router = createBrowserRouter([
     { path: '/', element: <App /> },
     { path: '/blog', element: <BlogHome /> },
+    { path: '/site-analysis', element: <SiteAudit /> },
     { path: '/blog/how-to-add-tailwindcss-to-react-app', element: <Tailwind /> },
 ]);
 
