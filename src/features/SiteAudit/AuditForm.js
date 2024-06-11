@@ -33,7 +33,7 @@ function SiteAnalysisForm() {
 
     const getColor = (score) => {
         if (score < 60) return '#FFEFEF'; // Red
-        if (score < 90) return '#FBFFE0'; // Yellow
+        if (score < 90) return '#FFAA33'; // Orange
         return '#0DCD6B'; // Green
     };
 
