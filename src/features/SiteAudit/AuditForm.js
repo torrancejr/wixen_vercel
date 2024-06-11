@@ -32,9 +32,9 @@ function SiteAnalysisForm() {
     };
 
     const getColor = (score) => {
-        if (score < 60) return 'red';
-        if (score < 90) return 'orange';
-        return 'green';
+        if (score < 60) return '#FFEFEF'; // Red
+        if (score < 90) return '#FBFFE0'; // Yellow
+        return '#0DCD6B'; // Green
     };
 
     const ScoreCircle = ({ score }) => (
@@ -135,5 +135,6 @@ function SiteAnalysisForm() {
 }
 
 export default SiteAnalysisForm;
+
 
 
