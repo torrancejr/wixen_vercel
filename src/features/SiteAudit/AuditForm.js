@@ -31,6 +31,23 @@ function SiteAnalysisForm() {
         return 'N/A';
     };
 
+    const getColor = (score) => {
+        if (score < 60) return 'red';
+        if (score < 90) return 'orange';
+        return 'green';
+    };
+
+    const ScoreCircle = ({ score }) => (
+        <div
+            className="circular-progress"
+            style={{
+                '--value': score,
+                '--color': getColor(score),
+            }}
+            data-value={score}
+        ></div>
+    );
+
     return (
         <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
             <div className="mx-auto max-w-xl lg:max-w-4xl">
@@ -76,10 +93,22 @@ function SiteAnalysisForm() {
                             <div className="mt-10">
                                 <h3 className="text-2xl font-semibold text-gray-900">Analysis Results</h3>
                                 <div className="mt-4 p-4 bg-gray-100 rounded-md text-gray-900">
-                                    <p><strong>Performance Score:</strong> {getScore('performance')}</p>
-                                    <p><strong>Accessibility Score:</strong> {getScore('accessibility')}</p>
-                                    <p><strong>Best Practices Score:</strong> {getScore('best-practices')}</p>
-                                    <p><strong>SEO Score:</strong> {getScore('seo')}</p>
+                                    <div className="flex items-center">
+                                        <ScoreCircle score={getScore('performance')} />
+                                        <p className="ml-4"><strong>Performance Score:</strong> {getScore('performance')}</p>
+                                    </div>
+                                    <div className="flex items-center mt-4">
+                                        <ScoreCircle score={getScore('accessibility')} />
+                                        <p className="ml-4"><strong>Accessibility Score:</strong> {getScore('accessibility')}</p>
+                                    </div>
+                                    <div className="flex items-center mt-4">
+                                        <ScoreCircle score={getScore('best-practices')} />
+                                        <p className="ml-4"><strong>Best Practices Score:</strong> {getScore('best-practices')}</p>
+                                    </div>
+                                    <div className="flex items-center mt-4">
+                                        <ScoreCircle score={getScore('seo')} />
+                                        <p className="ml-4"><strong>SEO Score:</strong> {getScore('seo')}</p>
+                                    </div>
                                 </div>
                             </div>
                         )}
