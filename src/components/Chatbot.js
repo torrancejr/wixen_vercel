@@ -4,8 +4,19 @@ import axios from 'axios';
 const Chatbot = () => {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
-    const [isOpen, setIsOpen] = useState(true); // Open by default
+    const [isOpen, setIsOpen] = useState(false); // Default to closed
     const messagesEndRef = useRef(null);
+
+    // Determine initial state based on screen size
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(min-width: 768px)'); // Default to open on screens wider than 768px
+        setIsOpen(mediaQuery.matches);
+
+        const handleResize = () => setIsOpen(mediaQuery.matches);
+        mediaQuery.addEventListener('change', handleResize);
+
+        return () => mediaQuery.removeEventListener('change', handleResize);
+    }, []);
 
     const sendMessage = async () => {
         if (input.trim() === '') return;
@@ -14,7 +25,7 @@ const Chatbot = () => {
         setMessages([...messages, userMessage]);
 
         try {
-            const response = await axios.post('http://localhost:3000/chatbot/respond', { message: input });
+            const response = await axios.post('https://wixenco-api-2ee861916a31.herokuapp.com/chatbot/respond', { message: input });
             const botMessage = { sender: 'bot', text: response.data.response };
             setMessages([...messages, userMessage, botMessage]);
         } catch (error) {
