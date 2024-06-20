@@ -5,10 +5,8 @@ const posts = [
         id: 1,
         title: 'How to Add Tailwind CSS to Your React Project',
         href: '/blog/how-to-add-tailwindcss-to-react-app',
-        description:
-            'Learn how to seamlessly integrate Tailwind CSS into your React project with our step-by-step guide, enhancing your web development workflow with modern, utility-first styling.',
-        imageUrl:
-            'https://wixenco.s3.amazonaws.com/react2.jpeg',
+        description: 'Learn how to seamlessly integrate Tailwind CSS into your React project with our step-by-step guide, enhancing your web development workflow with modern, utility-first styling.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/react2.jpeg',
         date: 'Mar 16, 2024',
         datetime: '2024-03-16',
         category: { title: 'Web Design', href: '#' },
@@ -16,12 +14,28 @@ const posts = [
             name: 'Ryan Torrance',
             role: 'Owner',
             href: '#',
-            imageUrl:
-                '',
+            imageUrl: ''
+        },
+    },
+    {
+        id: 2,
+        title: 'Unlocking the Power of Google Structured Data: Boost Your SEO with Schema Markup',
+        href: '/blog/unlocking-the-power-of-google-structured-data',
+        description: 'Discover how Google Structured Data can enhance your website\'s SEO. Learn to implement Schema Markup for rich snippets and better search engine visibility with our comprehensive guide.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/google.jpeg',
+        date: 'Jun 20, 2024',
+        datetime: '2024-06-20',
+        category: { title: 'SEO', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
         },
     },
     // More posts...
-]
+];
+
 
 export default function Blog() {
     return (
@@ -40,7 +54,7 @@ export default function Blog() {
                                 <img
                                     src={post.imageUrl}
                                     alt=""
-                                    className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                                    className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[4/3]"
                                 />
                                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
                             </div>
@@ -83,5 +97,5 @@ export default function Blog() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
