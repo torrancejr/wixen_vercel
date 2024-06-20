@@ -7,10 +7,8 @@ const posts = [
         id: 1,
         title: 'How to Add Tailwind CSS to Your React Project',
         href: '/blog/how-to-add-tailwindcss-to-react-app',
-        description:
-        'Learn how to seamlessly integrate Tailwind CSS into your React project with our step-by-step guide, enhancing your web development workflow with modern, utility-first styling.',
-        imageUrl:
-            'https://wixenco.s3.amazonaws.com/react2.jpeg',
+        description: 'Learn how to seamlessly integrate Tailwind CSS into your React project with our step-by-step guide, enhancing your web development workflow with modern, utility-first styling.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/react2.jpeg',
         date: 'Mar 16, 2024',
         datetime: '2024-03-16',
         category: { title: 'Web Design', href: '#' },
@@ -18,17 +16,32 @@ const posts = [
             name: 'Ryan Torrance',
             role: 'Owner',
             href: '#',
-            imageUrl:
-                ''
+            imageUrl: ''
+        },
+    },
+    {
+        id: 2,
+        title: 'Unlocking the Power of Google Structured Data: Boost Your SEO with Schema Markup',
+        href: '/blog/unlocking-the-power-of-google-structured-data',
+        description: 'Discover how Google Structured Data can enhance your website\'s SEO. Learn to implement Schema Markup for rich snippets and better search engine visibility with our comprehensive guide.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/google.jpeg',
+        date: 'Jun 20, 2024',
+        datetime: '2024-06-20',
+        category: { title: 'SEO', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
         },
     },
     // More posts...
-]
+];
 
 export default function Example() {
     return (
         <div className="bg-white py-6 sm:py-6">
-        <Header />
+            <Header />
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:max-w-4xl">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
@@ -38,7 +51,7 @@ export default function Example() {
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
                         {posts.map((post) => (
                             <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
-                                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+                                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-80 lg:shrink-0">
                                     <img
                                         src={post.imageUrl}
                                         alt=""
@@ -89,5 +102,6 @@ export default function Example() {
             </div>
             <Footer />
         </div>
-    )
+    );
 }
+
