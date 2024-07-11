@@ -2,14 +2,14 @@ import React from 'react';
 
 const posts = [
     {
-        id: 1,
-        title: 'How to Add Tailwind CSS to Your React Project',
-        href: '/blog/how-to-add-tailwindcss-to-react-app',
-        description: 'Learn how to seamlessly integrate Tailwind CSS into your React project with our step-by-step guide, enhancing your web development workflow with modern, utility-first styling.',
-        imageUrl: 'https://wixenco.s3.amazonaws.com/react2.jpeg',
-        date: 'Mar 16, 2024',
-        datetime: '2024-03-16',
-        category: { title: 'Web Design', href: '#' },
+        id: 3,
+        title: 'Step-by-Step Guide: How to Install and Use Ollama on macOS for Running LLMs Locally.',
+        href: '/blog/how-to-install-and-use-ollama-on-macos',
+        description: 'Learn how to install and use Ollama on macOS with this easy-to-follow guide. Discover how to run large language models locally for enhanced privacy and control. Perfect for developers and AI enthusiasts!',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/ollama.webp',
+        date: 'July 11, 2024',
+        datetime: '2024-07-11',
+        category: { title: 'Ai', href: '#' },
         author: {
             name: 'Ryan Torrance',
             role: 'Owner',
@@ -26,6 +26,22 @@ const posts = [
         date: 'Jun 20, 2024',
         datetime: '2024-06-20',
         category: { title: 'SEO', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        },
+    },
+    {
+        id: 1,
+        title: 'How to Add Tailwind CSS to Your React Project',
+        href: '/blog/how-to-add-tailwindcss-to-react-app',
+        description: 'Learn how to seamlessly integrate Tailwind CSS into your React project with our step-by-step guide, enhancing your web development workflow with modern, utility-first styling.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/react2.jpeg',
+        date: 'Mar 16, 2024',
+        datetime: '2024-03-16',
+        category: { title: 'Web Design', href: '#' },
         author: {
             name: 'Ryan Torrance',
             role: 'Owner',
