@@ -3,6 +3,22 @@ import React from 'react';
 const posts = [
     {
         id: 3,
+        title: 'Top CSS Frameworks of 2024.',
+        href: '/blog/top-css-framework-of-2024',
+        description: 'Explore the best CSS frameworks of 2024! Discover top features, advantages, and how they can streamline your web development process. Stay ahead in web design!',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/frameworks.png',
+        date: 'July 15, 2024',
+        datetime: '2024-07-15',
+        category: { title: 'Web Design', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        },
+    },
+    {
+        id: 2,
         title: 'Step-by-Step Guide: How to Install and Use Ollama on macOS for Running LLMs Locally.',
         href: '/blog/how-to-install-and-use-ollama-on-macos',
         description: 'Learn how to install and use Ollama on macOS with this easy-to-follow guide. Discover how to run large language models locally for enhanced privacy and control. Perfect for developers and AI enthusiasts!',
@@ -18,7 +34,7 @@ const posts = [
         },
     },
     {
-        id: 2,
+        id: 1,
         title: 'Unlocking the Power of Google Structured Data: Boost Your SEO with Schema Markup',
         href: '/blog/unlocking-the-power-of-google-structured-data',
         description: 'Discover how Google Structured Data can enhance your website\'s SEO. Learn to implement Schema Markup for rich snippets and better search engine visibility with our comprehensive guide.',
@@ -26,22 +42,6 @@ const posts = [
         date: 'Jun 20, 2024',
         datetime: '2024-06-20',
         category: { title: 'SEO', href: '#' },
-        author: {
-            name: 'Ryan Torrance',
-            role: 'Owner',
-            href: '#',
-            imageUrl: ''
-        },
-    },
-    {
-        id: 1,
-        title: 'How to Add Tailwind CSS to Your React Project',
-        href: '/blog/how-to-add-tailwindcss-to-react-app',
-        description: 'Learn how to seamlessly integrate Tailwind CSS into your React project with our step-by-step guide, enhancing your web development workflow with modern, utility-first styling.',
-        imageUrl: 'https://wixenco.s3.amazonaws.com/react2.jpeg',
-        date: 'Mar 16, 2024',
-        datetime: '2024-03-16',
-        category: { title: 'Web Design', href: '#' },
         author: {
             name: 'Ryan Torrance',
             role: 'Owner',

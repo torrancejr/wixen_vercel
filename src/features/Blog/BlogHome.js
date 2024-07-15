@@ -4,6 +4,22 @@ import Footer from '../../components/Footer';
 
 const posts = [
     {
+        id: 4,
+        title: 'Top CSS Frameworks of 2024.',
+        href: '/blog/top-css-framework-of-2024',
+        description: 'Explore the best CSS frameworks of 2024! Discover top features, advantages, and how they can streamline your web development process. Stay ahead in web design!',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/frameworks.png',
+        date: 'July 15, 2024',
+        datetime: '2024-07-15',
+        category: { title: 'Web Design', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        },
+    },
+    {
         id: 1,
         title: 'Step-by-Step Guide: How to Install and Use Ollama on macOS for Running LLMs Locally.',
         href: '/blog/how-to-install-and-use-ollama-on-macos',
