@@ -8,6 +8,7 @@ import Stucture from './features/Blog/articles/StructuredData';
 import Ollama from "./features/Blog/articles/Ollama";
 import reportWebVitals from './reportWebVitals';
 import SiteAudit from "./features/SiteAudit/SiteAudit";
+import CssFrameworks from "./features/Blog/articles/CssFrameworks";
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import ReactGA from 'react-ga4';
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     { path: '/blog/how-to-add-tailwindcss-to-react-app', element: <Tailwind /> },
     { path: '/blog/unlocking-the-power-of-google-structured-data', element: <Stucture /> },
     { path: '/blog/how-to-install-and-use-ollama-on-macos', element: <Ollama /> },
+    { path: '/blog/top-css-framework-of-2024', element: <CssFrameworks /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
