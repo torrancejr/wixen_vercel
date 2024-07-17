@@ -12,7 +12,7 @@ const RankChecker = () => {
         setResults([]);
         setLoading(true);
         try {
-            const response = await fetch(`https://www.wixenco.com/rank?domain=${domain}`);
+            const response = await fetch(`https://wixenco-api-2ee861916a31.herokuapp.com/rank?domain=${domain}`);
             const data = await response.json();
 
             if (response.ok) {
