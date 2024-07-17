@@ -136,7 +136,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="mt-8 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow flex justify-center">
-                        <img src="https://wixenco.s3.amazonaws.com/moonman2.svg" alt="Moonman" className="hidden lg:block w-[22.875rem] max-w-full drop-shadow-xl" />
+                        <img src="https://wixenco.s3.amazonaws.com/moonman_homepage.webp" alt="Moonman" className="hidden lg:block w-[22.875rem] max-w-full drop-shadow-xl" />
                         <img src="https://wixenco.s3.amazonaws.com/moonman.svg" alt="Moonman" className="lg:hidden w-[22.875rem] max-w-full drop-shadow-xl" />
                     </div>
                 </div>

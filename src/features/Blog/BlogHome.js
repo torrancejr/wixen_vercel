@@ -5,6 +5,22 @@ import { Helmet } from 'react-helmet';
 
 const posts = [
     {
+        id: 5,
+        title: 'Tour-de-Trike - West Chester, Pa in Chester County - August 9, 2024.',
+        href: '/blog/tour-de-trike-adult-tricycle-relay-race-west-chester-pa-2024',
+        description: 'Join us for the Tour-de-Trike on Gay Street in West Chester on Friday, August 9, 2024, from 3:30pm-6:00pm. Enjoy adult-sized tricycle races, with registration starting at 3:00pm. Rain date: August 16.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/trike-homepage.webp',
+        date: 'July 17, 2024',
+        datetime: '2024-07-17',
+        category: { title: 'West Chester Events', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        },
+    },
+    {
         id: 4,
         title: 'Top CSS Frameworks of 2024.',
         href: '/blog/top-css-framework-of-2024',
@@ -87,7 +103,7 @@ export default function Example() {
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
                         {posts.map((post) => (
                             <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
-                                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-80 lg:shrink-0">
+                                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-[calc(20rem+15px)] lg:shrink-0">
                                     <img
                                         src={post.imageUrl}
                                         alt=""

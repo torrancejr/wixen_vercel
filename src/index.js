@@ -6,6 +6,7 @@ import BlogHome from './features/Blog/BlogHome';
 import Tailwind from './features/Blog/articles/TailwindBlog';
 import Stucture from './features/Blog/articles/StructuredData';
 import Ollama from "./features/Blog/articles/Ollama";
+import Trike from "./features/Blog/articles/Trike";
 import reportWebVitals from './reportWebVitals';
 import SiteAudit from "./features/SiteAudit/SiteAudit";
 import CssFrameworks from "./features/Blog/articles/CssFrameworks";
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
     { path: '/blog/unlocking-the-power-of-google-structured-data', element: <Stucture /> },
     { path: '/blog/how-to-install-and-use-ollama-on-macos', element: <Ollama /> },
     { path: '/blog/top-css-framework-of-2024', element: <CssFrameworks /> },
+    { path: '/blog/tour-de-trike-adult-tricycle-relay-race-west-chester-pa-2024', element: <Trike />},
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
