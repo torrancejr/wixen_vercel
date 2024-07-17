@@ -26,7 +26,7 @@ const myCode2 = `function App() {
 
 function Blog() {
     return (
-        <div className="bg-white pb-8">
+        <div className="bg-white px-6 py-32 lg:px-8">
             <Helmet>
                 <title>Tailwind CSS - West Chester, PA in Chester County - WixenCo Web Design & SEO </title>
             </Helmet>
