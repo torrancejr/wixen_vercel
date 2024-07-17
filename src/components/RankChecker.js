@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const RankChecker = () => {
     const [domain, setDomain] = useState('');
@@ -29,6 +30,11 @@ const RankChecker = () => {
 
     return (
         <div className="relative isolate bg-white px-6 py-8 sm:py-32 lg:px-8">
+            <title>SEO Tool - Google Index Check - West Chester, PA in Chester County - WixenCo</title>
+            <meta
+                name="description"
+                content="SEO Tool - Google Index Check - WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
+            />
             <svg
                 className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
@@ -42,7 +48,7 @@ const RankChecker = () => {
                         y={-64}
                         patternUnits="userSpaceOnUse"
                     >
-                        <path d="M100 200V.5M.5 .5H200" fill="none" />
+                        <path d="M100 200V.5M.5 .5H200" fill="none"/>
                     </pattern>
                 </defs>
                 <svg x="50%" y={-64} className="overflow-visible fill-gray-50">
@@ -51,13 +57,19 @@ const RankChecker = () => {
                         strokeWidth={0}
                     />
                 </svg>
-                <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+                <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"/>
             </svg>
             <div className="mx-auto max-w-xl lg:max-w-4xl flex flex-col lg:flex-row">
                 <div className="flex-grow">
-                    <h2 className="text-4xl font-bold tracking-tight text-gray-900">Check Your Indexed Pages on Google.</h2>
+                    <h2 className="text-4xl font-bold tracking-tight text-gray-900">Check Your Indexed Pages on
+                        Google.</h2>
                     <p className="mt-2 text-lg leading-8 text-gray-600">
-                        Enter your website's domain to see your latest pages ranked on Google. If no results appear, it means your website isn't being indexed by Google. This means people can't find your site through search engines, but don't worry—I'm here to help! If there are very few results, I can help generate more content to improve your site's visibility. You can see examples of top-ranked pages from my own site to give you an idea of what well-indexed pages look like. Remember Content is King!
+                        Enter your website's domain to see your latest pages ranked on Google. If no results appear, it
+                        means your website isn't being indexed by Google. This means people can't find your site through
+                        search engines, but don't worry—I'm here to help! If there are very few results, I can help
+                        generate more content to improve your site's visibility. You can see examples of top-ranked
+                        pages from my own site to give you an idea of what well-indexed pages look like. Remember
+                        Content is King!
                     </p>
                     <form onSubmit={checkRank} className="mt-16 lg:mt-0 lg:flex-auto">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -94,7 +106,9 @@ const RankChecker = () => {
                     <div className="mt-4">
                         {loading ? (
                             <div className="flex justify-center items-center">
-                                <div className="spinner-border animate-spin inline-block w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full" role="status">
+                                <div
+                                    className="spinner-border animate-spin inline-block w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full"
+                                    role="status">
                                     <span className="visually-hidden">Loading...</span>
                                 </div>
                             </div>
@@ -114,57 +128,71 @@ const RankChecker = () => {
                             <ul className="space-y-6">
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Found Page: 1</p>
-                                    <p className="text-lg font-semibold text-gray-900">WixenCo - Web Design and SEO Services | Crafting Websites ...</p>
+                                    <p className="text-lg font-semibold text-gray-900">WixenCo - Web Design and SEO
+                                        Services | Crafting Websites ...</p>
                                     <a href="https://www.wixenco.com" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Found Page: 2</p>
-                                    <p className="text-lg font-semibold text-gray-900">Blog - Development - Web Services | SEO - Wixenco</p>
-                                    <a href="https://www.wixenco.com/blog/development" className="text-indigo-600 hover:underline">
+                                    <p className="text-lg font-semibold text-gray-900">Blog - Development - Web Services
+                                        | SEO - Wixenco</p>
+                                    <a href="https://www.wixenco.com/blog/development"
+                                       className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › de...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Found Page: 3</p>
-                                    <p className="text-lg font-semibold text-gray-900">WixenCo | Crafting Websites & Boosting Online Presence</p>
+                                    <p className="text-lg font-semibold text-gray-900">WixenCo | Crafting Websites &
+                                        Boosting Online Presence</p>
                                     <a href="https://www.wixenco.com/blog" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Found Page: 4</p>
-                                    <p className="text-lg font-semibold text-gray-900">Optimize Your Website with Our Comprehensive Site Analysis</p>
-                                    <a href="https://www.wixenco.com/site-analysis" className="text-indigo-600 hover:underline">
+                                    <p className="text-lg font-semibold text-gray-900">Optimize Your Website with Our
+                                        Comprehensive Site Analysis</p>
+                                    <a href="https://www.wixenco.com/site-analysis"
+                                       className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › site-analysis
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Found Page: 5</p>
-                                    <p className="text-lg font-semibold text-gray-900">Top CSS Frameworks of 2024 - WixenCo</p>
-                                    <a href="https://www.wixenco.com/blog/top-css-framework-of-2024" className="text-indigo-600 hover:underline">
+                                    <p className="text-lg font-semibold text-gray-900">Top CSS Frameworks of 2024 -
+                                        WixenCo</p>
+                                    <a href="https://www.wixenco.com/blog/top-css-framework-of-2024"
+                                       className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › top...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Found Page: 6</p>
-                                    <p className="text-lg font-semibold text-gray-900">Boost Your SEO with Schema Markup - WixenCo</p>
-                                    <a href="https://www.wixenco.com/blog/unlocking-the-power-of-google-structured-data" className="text-indigo-600 hover:underline">
+                                    <p className="text-lg font-semibold text-gray-900">Boost Your SEO with Schema Markup
+                                        - WixenCo</p>
+                                    <a href="https://www.wixenco.com/blog/unlocking-the-power-of-google-structured-data"
+                                       className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › unl...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Found Page: 7</p>
-                                    <p className="text-lg font-semibold text-gray-900">How to Add Tailwind CSS to Your React Project - WixenCo</p>
-                                    <a href="https://www.wixenco.com/blog/how-to-add-tailwindcss-to-react-app" className="text-indigo-600 hover:underline">
+                                    <p className="text-lg font-semibold text-gray-900">How to Add Tailwind CSS to Your
+                                        React Project - WixenCo</p>
+                                    <a href="https://www.wixenco.com/blog/how-to-add-tailwindcss-to-react-app"
+                                       className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › ho...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Found Page: 8</p>
-                                    <p className="text-lg font-semibold text-gray-900">How to Install and Use Ollama on macOS for Running LLMs ...</p>
-                                    <a href="https://www.wixenco.com/blog/how-to-install-and-use-ollama-on-macos" className="text-indigo-600 hover:underline">
+                                    <p className="text-lg font-semibold text-gray-900">How to Install and Use Ollama on
+                                        macOS for Running LLMs ...</p>
+                                    <a href="https://www.wixenco.com/blog/how-to-install-and-use-ollama-on-macos"
+                                       className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › ho...
                                     </a>
                                 </li>

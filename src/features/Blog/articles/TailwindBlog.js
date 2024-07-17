@@ -29,6 +29,10 @@ function Blog() {
         <div className="bg-white px-6 py-32 lg:px-8">
             <Helmet>
                 <title>Tailwind CSS - West Chester, PA in Chester County - WixenCo Web Design & SEO </title>
+                <meta
+                    name="description"
+                    content="WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
+                />
             </Helmet>
             <Header/>
             <header className="py-8">

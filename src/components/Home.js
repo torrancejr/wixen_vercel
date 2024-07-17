@@ -19,6 +19,10 @@ export default function Home() {
             <Header></Header>
             <Helmet>
                 <title>Web Design & SEO - West Chester, PA in Chester County - WixenCo</title>
+                <meta
+                    name="description"
+                    content="WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
+                />
             </Helmet>
 
             <div className="relative isolate pt-4 sm:pt-8"> {/* Reduced top padding */}
