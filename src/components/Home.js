@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Header from './Header';
 import { Helmet } from 'react-helmet';
 
 const navigation = [
@@ -15,82 +16,12 @@ export default function Home() {
 
     return (
         <div className="bg-white">
+            <Header></Header>
             <Helmet>
                 <title>Web Design & SEO - West Chester, PA in Chester County - WixenCo</title>
             </Helmet>
-            <header className="absolute inset-x-0 top-0 z-50 lg:top-8">
-                <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
-                    <div className="flex items-center lg:flex-1">
-                        <a href="/" className="-m-1.5 p-1.5">
-                            <span className="sr-only">WixenCo</span>
-                            <img
-                                className="h-12 w-auto"
-                                src="https://wixenco.s3.amazonaws.com/ryan%40wixenco.com.svg"
-                                alt="WixenCo Logo"
-                            />
-                        </a>
-                    </div>
-                    <div className="flex lg:hidden">
-                        <button
-                            type="button"
-                            className="-m-2.5 inline-flex items-center justify-center rounded-md text-gray-700"
-                            onClick={() => setMobileMenuOpen(true)}
-                        >
-                            <span className="sr-only">Open main menu</span>
-                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                        </button>
-                    </div>
-                    <div className="hidden lg:flex lg:gap-x-12">
-                        {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
-                                {item.name}
-                            </a>
-                        ))}
-                    </div>
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    </div>
-                </nav>
-                <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)}>
-                    <div className="fixed inset-0 z-50" />
-                    <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-3 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                        <div className="flex items-center justify-between">
-                            <a href="/" className="-m-1.5 p-1.5">
-                                <span className="sr-only">WixenCo</span>
-                                <img
-                                    className="h-32 w-auto"
-                                    src="https://wixenco.s3.amazonaws.com/ryan%40wixenco.com.svg"
-                                    alt="WixenCo Logo"
-                                />
-                            </a>
-                            <button
-                                type="button"
-                                className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                <span className="sr-only">Close menu</span>
-                                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                            </button>
-                        </div>
-                        <div className="mt-6 flow-root">
-                            <div className="-my-6 divide-y divide-gray-500/10">
-                                <div className="space-y-2 py-6">
-                                    {navigation.map((item) => (
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
-                                            className="-mx-3 block rounded-lg px-3 py-2 text-base lg:text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                        >
-                                            {item.name}
-                                        </a>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </DialogPanel>
-                </Dialog>
-            </header>
 
-            <div className="relative isolate pt-4 sm:pt-14">
+            <div className="relative isolate pt-4 sm:pt-8"> {/* Reduced top padding */}
                 <svg
                     className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                     aria-hidden="true"
@@ -115,9 +46,9 @@ export default function Home() {
                     </svg>
                     <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
                 </svg>
-                <div className="mx-auto max-w-7xl px-6 py-16 sm:py-32 lg:py-40 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
+                <div className="mx-auto max-w-7xl px-6 py-12 sm:py-20 lg:py-28 lg:flex lg:items-center lg:gap-x-10 lg:px-8"> {/* Adjusted padding */}
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                        <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                        <h1 className="max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                             A <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-purple-500">Web Design</span> Company Crafting Websites That Tell Your Story
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -142,8 +73,9 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
+
 
 
 

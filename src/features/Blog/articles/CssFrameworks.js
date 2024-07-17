@@ -5,11 +5,12 @@ import React from "react";
 
 export default function Example() {
     return (
-        <div className="bg-white pb-8">
+        <div className="bg-white px-6 py-32 lg:px-8">
             <Helmet>
-                <title>Top CSS Frameworks of 2024 - West Chester, PA in Chester County - WixenCo Web Design & SEO </title>
+                <title>Top CSS Frameworks of 2024 - West Chester, PA in Chester County - WixenCo Web Design &
+                    SEO </title>
             </Helmet>
-            <Header />
+            <Header/>
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
                 <p className="text-base font-semibold leading-7 text-indigo-600">Introducing</p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Top CSS Frameworks of

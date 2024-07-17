@@ -10,6 +10,7 @@ import Trike from "./features/Blog/articles/Trike";
 import reportWebVitals from './reportWebVitals';
 import NotFoundPage from './components/NotFoundPage';
 import SiteAudit from "./features/SiteAudit/SiteAudit";
+import RankTool from './features/Tools/RankTool';
 import CssFrameworks from "./features/Blog/articles/CssFrameworks";
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import ReactGA from 'react-ga4';
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     { path: '/', element: <App /> },
     { path: '/blog', element: <BlogHome /> },
     { path: '/site-analysis', element: <SiteAudit /> },
+    { path: '/seo-tools/google-index-checker', element: <RankTool /> },
     { path: '/blog/how-to-add-tailwindcss-to-react-app', element: <Tailwind /> },
     { path: '/blog/unlocking-the-power-of-google-structured-data', element: <Stucture /> },
     { path: '/blog/how-to-install-and-use-ollama-on-macos', element: <Ollama /> },

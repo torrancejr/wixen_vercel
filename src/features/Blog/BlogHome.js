@@ -89,11 +89,11 @@ const posts = [
 
 export default function Example() {
     return (
-        <div className="bg-white py-6 sm:py-6">
+        <div className="bg-white">
             <Helmet>
                 <title>Web Design & SEO Blog - West Chester, PA in Chester County - WixenCo </title>
             </Helmet>
-            <Header />
+            <Header/>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:max-w-4xl">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
@@ -103,13 +103,14 @@ export default function Example() {
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
                         {posts.map((post) => (
                             <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
-                                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-[calc(20rem+15px)] lg:shrink-0">
+                                <div
+                                    className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-[calc(20rem+15px)] lg:shrink-0">
                                     <img
                                         src={post.imageUrl}
                                         alt=""
                                         className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
                                     />
-                                    <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+                                    <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"/>
                                 </div>
                                 <div>
                                     <div className="flex items-center gap-x-4 text-xs">
@@ -126,7 +127,7 @@ export default function Example() {
                                     <div className="group relative max-w-xl">
                                         <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                                             <a href={post.href}>
-                                                <span className="absolute inset-0" />
+                                                <span className="absolute inset-0"/>
                                                 {post.title}
                                             </a>
                                         </h3>
@@ -138,7 +139,7 @@ export default function Example() {
                                             <div className="text-sm leading-6">
                                                 <p className="font-semibold text-gray-900">
                                                     <a href={post.author.href}>
-                                                        <span className="absolute inset-0" />
+                                                        <span className="absolute inset-0"/>
                                                         {post.author.name}
                                                     </a>
                                                 </p>
@@ -152,7 +153,7 @@ export default function Example() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 }
