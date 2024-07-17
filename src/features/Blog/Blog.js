@@ -69,7 +69,8 @@ export default function Blog() {
                             <div className="relative w-full">
                                 <img
                                     src={post.imageUrl}
-                                    alt=""
+                                    alt={post.title}
+                                    loading="lazy"
                                     className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[4/3]"
                                 />
                                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
