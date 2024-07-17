@@ -53,7 +53,7 @@ const RankChecker = () => {
                 </svg>
                 <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
             </svg>
-            <div className="mx-auto max-w-xl lg:max-w-4xl flex">
+            <div className="mx-auto max-w-xl lg:max-w-4xl flex flex-col lg:flex-row">
                 <div className="flex-grow">
                     <h2 className="text-4xl font-bold tracking-tight text-gray-900">Check Your Indexed Pages on Google.</h2>
                     <p className="mt-2 text-lg leading-8 text-gray-600">
@@ -89,7 +89,7 @@ const RankChecker = () => {
                         {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
                     </form>
                 </div>
-                <div className="lg:mt-6 lg:w-80 lg:flex-none lg:ml-8">
+                <div className="lg:mt-6 lg:w-80 lg:flex-none lg:ml-8 mt-8 lg:mt-0">
                     <h3 className="text-xl font-bold text-gray-900">Results</h3>
                     <div className="mt-4">
                         {loading ? (
@@ -113,56 +113,56 @@ const RankChecker = () => {
                         ) : (
                             <ul className="space-y-6">
                                 <li className="border-b pb-6">
-                                    <p className="text-sm text-gray-600">Position: 1</p>
+                                    <p className="text-sm text-gray-600">Found Page: 1</p>
                                     <p className="text-lg font-semibold text-gray-900">WixenCo - Web Design and SEO Services | Crafting Websites ...</p>
                                     <a href="https://www.wixenco.com" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
-                                    <p className="text-sm text-gray-600">Position: 2</p>
+                                    <p className="text-sm text-gray-600">Found Page: 2</p>
                                     <p className="text-lg font-semibold text-gray-900">Blog - Development - Web Services | SEO - Wixenco</p>
                                     <a href="https://www.wixenco.com/blog/development" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › de...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
-                                    <p className="text-sm text-gray-600">Position: 3</p>
+                                    <p className="text-sm text-gray-600">Found Page: 3</p>
                                     <p className="text-lg font-semibold text-gray-900">WixenCo | Crafting Websites & Boosting Online Presence</p>
                                     <a href="https://www.wixenco.com/blog" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
-                                    <p className="text-sm text-gray-600">Position: 4</p>
+                                    <p className="text-sm text-gray-600">Found Page: 4</p>
                                     <p className="text-lg font-semibold text-gray-900">Optimize Your Website with Our Comprehensive Site Analysis</p>
                                     <a href="https://www.wixenco.com/site-analysis" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › site-analysis
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
-                                    <p className="text-sm text-gray-600">Position: 5</p>
+                                    <p className="text-sm text-gray-600">Found Page: 5</p>
                                     <p className="text-lg font-semibold text-gray-900">Top CSS Frameworks of 2024 - WixenCo</p>
                                     <a href="https://www.wixenco.com/blog/top-css-framework-of-2024" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › top...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
-                                    <p className="text-sm text-gray-600">Position: 6</p>
+                                    <p className="text-sm text-gray-600">Found Page: 6</p>
                                     <p className="text-lg font-semibold text-gray-900">Boost Your SEO with Schema Markup - WixenCo</p>
                                     <a href="https://www.wixenco.com/blog/unlocking-the-power-of-google-structured-data" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › unl...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
-                                    <p className="text-sm text-gray-600">Position: 7</p>
+                                    <p className="text-sm text-gray-600">Found Page: 7</p>
                                     <p className="text-lg font-semibold text-gray-900">How to Add Tailwind CSS to Your React Project - WixenCo</p>
                                     <a href="https://www.wixenco.com/blog/how-to-add-tailwindcss-to-react-app" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › ho...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
-                                    <p className="text-sm text-gray-600">Position: 8</p>
+                                    <p className="text-sm text-gray-600">Found Page: 8</p>
                                     <p className="text-lg font-semibold text-gray-900">How to Install and Use Ollama on macOS for Running LLMs ...</p>
                                     <a href="https://www.wixenco.com/blog/how-to-install-and-use-ollama-on-macos" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com › blog › ho...
@@ -178,6 +178,7 @@ const RankChecker = () => {
 };
 
 export default RankChecker;
+
 
 
 
