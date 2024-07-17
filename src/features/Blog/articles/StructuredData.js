@@ -1,10 +1,14 @@
 import React from 'react';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
+import { Helmet } from 'react-helmet';
 
 function Blog() {
     return (
         <div className="bg-white">
+            <Helmet>
+                <title>Google Structured Data - West Chester, PA in Chester County - WixenCo Web Design & SEO </title>
+            </Helmet>
             <Header />
             <header className="py-8">
                 <div className="container mx-auto px-4">

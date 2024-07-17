@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Helmet } from 'react-helmet';
 
 const navigation = [
     { name: 'Contact Me', href: '#contact' },
@@ -14,6 +15,9 @@ export default function Home() {
 
     return (
         <div className="bg-white">
+            <Helmet>
+                <title>Web Design & SEO - West Chester, PA in Chester County - WixenCo</title>
+            </Helmet>
             <header className="absolute inset-x-0 top-0 z-50 lg:top-8">
                 <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
                     <div className="flex items-center lg:flex-1">
@@ -114,17 +118,17 @@ export default function Home() {
                 <div className="mx-auto max-w-7xl px-6 py-16 sm:py-32 lg:py-40 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                         <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                            A <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-purple-500">Freelance</span> Web Developer Crafting Websites That Tell Your Story
+                            A <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-purple-500">Web Design</span> Company Crafting Websites That Tell Your Story
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            I specialize in creating unique, tailored websites that effectively communicate your brand's narrative and engage your audience.
+                            We specialize in creating unique, tailored websites that effectively communicate your brand's narrative and engage your audience.
                         </p>
                         <div className="mt-10 flex items-center gap-x-6">
                             <a
                                 href="#contact"
                                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
-                                Contact Me
+                                Contact Us
                             </a>
                             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                                 Learn more <span aria-hidden="true">→</span>

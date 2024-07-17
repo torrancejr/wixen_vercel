@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
+import { Helmet } from 'react-helmet';
 
 const myCode = `module.exports = {
   content: [
@@ -15,8 +16,11 @@ const myCode = `module.exports = {
 const myCode2 = `function App() {
   return (
     <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+    <Helmet>
+        <title>Tailwind CSS - West Chester, PA in Chester County - WixenCo Web Design & SEO </title>
+    </Helmet>
       <div>
-        <h1 className="text-xl font-medium text-black">Welcome to Tailwind!</h1>
+        <h1 className="text-xl font-medium text-black">Welcome to Tailwind CSS!</h1>
         <p className="text-gray-500">You're ready to build awesome interfaces!</p>
       </div>
     </div>
