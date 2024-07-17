@@ -102,7 +102,7 @@ const RankChecker = () => {
                             <ul className="space-y-6">
                                 {results.map((result, index) => (
                                     <li key={index} className="border-b pb-6">
-                                        <p className="text-sm text-gray-600">Position: {result.position}</p>
+                                        <p className="text-sm text-gray-600">Found Page: {result.position}</p>
                                         <p className="text-lg font-semibold text-gray-900">{result.title}</p>
                                         <a href={result.link} className="text-indigo-600 hover:underline">
                                             {result.displayed_link}
