@@ -28,7 +28,7 @@ const RankChecker = () => {
     };
 
     return (
-        <div className="relative isolate bg-white px-6 pd-8 sm:py-32 lg:px-8">
+        <div className="relative isolate bg-white px-6 py-8 sm:py-32 lg:px-8">
             <svg
                 className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
@@ -57,7 +57,7 @@ const RankChecker = () => {
                 <div className="flex-grow">
                     <h2 className="text-4xl font-bold tracking-tight text-gray-900">Check Your Indexed Pages on Google.</h2>
                     <p className="mt-2 text-lg leading-8 text-gray-600">
-                        Enter your website's domain to see your latest pages ranked on Google. If no results appear, it means your website isn't being indexed by Google. This means people can't find your site through search engines, but don't worry—I'm here to help! If there are very few results, I can help generate more content to improve your site's visibility. Below, you'll find examples of top-ranked pages from my own site to give you an idea of what well-indexed pages look like. Remember Content is King!
+                        Enter your website's domain to see your latest pages ranked on Google. If no results appear, it means your website isn't being indexed by Google. This means people can't find your site through search engines, but don't worry—I'm here to help! If there are very few results, I can help generate more content to improve your site's visibility. You can see examples of top-ranked pages from my own site to give you an idea of what well-indexed pages look like. Remember Content is King!
                     </p>
                     <form onSubmit={checkRank} className="mt-16 lg:mt-0 lg:flex-auto">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -94,15 +94,15 @@ const RankChecker = () => {
                     <div className="mt-4">
                         {loading ? (
                             <div className="flex justify-center items-center">
-                                <div className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full text-indigo-600" role="status">
+                                <div className="spinner-border animate-spin inline-block w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full" role="status">
                                     <span className="visually-hidden">Loading...</span>
                                 </div>
                             </div>
                         ) : results.length > 0 ? (
                             <ul className="space-y-6">
-                                {results.map((result) => (
-                                    <li key={result.position} className="border-b pb-6">
-                                        <p className="text-sm text-gray-600">Link: {result.position}</p>
+                                {results.map((result, index) => (
+                                    <li key={index} className="border-b pb-6">
+                                        <p className="text-sm text-gray-600">Position: {result.position}</p>
                                         <p className="text-lg font-semibold text-gray-900">{result.title}</p>
                                         <a href={result.link} className="text-indigo-600 hover:underline">
                                             {result.displayed_link}
@@ -115,7 +115,7 @@ const RankChecker = () => {
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Position: 1</p>
                                     <p className="text-lg font-semibold text-gray-900">WixenCo - Web Design and SEO Services | Crafting Websites ...</p>
-                                    <a href="https://www.wixenco.com/" className="text-indigo-600 hover:underline">
+                                    <a href="https://www.wixenco.com" className="text-indigo-600 hover:underline">
                                         https://www.wixenco.com
                                     </a>
                                 </li>
@@ -123,7 +123,7 @@ const RankChecker = () => {
                                     <p className="text-sm text-gray-600">Position: 2</p>
                                     <p className="text-lg font-semibold text-gray-900">Blog - Development - Web Services | SEO - Wixenco</p>
                                     <a href="https://www.wixenco.com/blog/development" className="text-indigo-600 hover:underline">
-                                        https://www.wixenco.com › blog
+                                        https://www.wixenco.com › blog › de...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
@@ -135,44 +135,37 @@ const RankChecker = () => {
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Position: 4</p>
-                                    <p className="text-lg font-semibold text-gray-900">Wixenco - Blog - SEO Tips - Web Services</p>
-                                    <a href="https://www.wixenco.com/blog/seo-tips" className="text-indigo-600 hover:underline">
-                                        https://www.wixenco.com › blog
+                                    <p className="text-lg font-semibold text-gray-900">Optimize Your Website with Our Comprehensive Site Analysis</p>
+                                    <a href="https://www.wixenco.com/site-analysis" className="text-indigo-600 hover:underline">
+                                        https://www.wixenco.com › site-analysis
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Position: 5</p>
-                                    <p className="text-lg font-semibold text-gray-900">Optimize Your Website with Our Comprehensive Site Analysis</p>
-                                    <a href="https://www.wixenco.com/site-analysis" className="text-indigo-600 hover:underline">
-                                        https://www.wixenco.com › sit...
+                                    <p className="text-lg font-semibold text-gray-900">Top CSS Frameworks of 2024 - WixenCo</p>
+                                    <a href="https://www.wixenco.com/blog/top-css-framework-of-2024" className="text-indigo-600 hover:underline">
+                                        https://www.wixenco.com › blog › top...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Position: 6</p>
-                                    <p className="text-lg font-semibold text-gray-900">Top CSS Frameworks of 2024 - WixenCo</p>
-                                    <a href="https://www.wixenco.com/blog/top-css-framework-of-2024" className="text-indigo-600 hover:underline">
-                                        https://www.wixenco.com › blog
+                                    <p className="text-lg font-semibold text-gray-900">Boost Your SEO with Schema Markup - WixenCo</p>
+                                    <a href="https://www.wixenco.com/blog/unlocking-the-power-of-google-structured-data" className="text-indigo-600 hover:underline">
+                                        https://www.wixenco.com › blog › unl...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Position: 7</p>
-                                    <p className="text-lg font-semibold text-gray-900">Boost Your SEO with Schema Markup - WixenCo</p>
-                                    <a href="https://www.wixenco.com/blog/unlocking-the-power-of-google-structured-data" className="text-indigo-600 hover:underline">
-                                        https://www.wixenco.com › blog
+                                    <p className="text-lg font-semibold text-gray-900">How to Add Tailwind CSS to Your React Project - WixenCo</p>
+                                    <a href="https://www.wixenco.com/blog/how-to-add-tailwindcss-to-react-app" className="text-indigo-600 hover:underline">
+                                        https://www.wixenco.com › blog › ho...
                                     </a>
                                 </li>
                                 <li className="border-b pb-6">
                                     <p className="text-sm text-gray-600">Position: 8</p>
-                                    <p className="text-lg font-semibold text-gray-900">How to Add Tailwind CSS to Your React Project - WixenCo</p>
-                                    <a href="https://www.wixenco.com/blog/how-to-add-tailwindcss-to-react-app" className="text-indigo-600 hover:underline">
-                                        https://www.wixenco.com › blog
-                                    </a>
-                                </li>
-                                <li className="border-b pb-6">
-                                    <p className="text-sm text-gray-600">Position: 9</p>
                                     <p className="text-lg font-semibold text-gray-900">How to Install and Use Ollama on macOS for Running LLMs ...</p>
                                     <a href="https://www.wixenco.com/blog/how-to-install-and-use-ollama-on-macos" className="text-indigo-600 hover:underline">
-                                        https://www.wixenco.com › blog
+                                        https://www.wixenco.com › blog › ho...
                                     </a>
                                 </li>
                             </ul>
@@ -185,6 +178,7 @@ const RankChecker = () => {
 };
 
 export default RankChecker;
+
 
 
 
