@@ -1,6 +1,7 @@
 import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
+import {Helmet} from "react-helmet";
 
 const installCommand = `npm install -D tailwindcss postcss autoprefixer npx tailwindcss init -p`;
 
@@ -17,10 +18,13 @@ const tailwindConfig = `module.exports = {
 export default function Ollama() {
     return (
         <div className="bg-white px-6 py-6 lg:px-8">
+            <Helmet>
+                <title>Step-by-Step Guide: Ollama Ai - West Chester, PA in Chester County - WixenCo Web Design & SEO </title>
+            </Helmet>
             <Header />
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
                 <p className="text-base font-semibold leading-7 text-indigo-600">Introducing</p>
-                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Step-by-Step Guide: How to Install and Use Ollama on macOS for Running LLMs Locally</h1>
+                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Step-by-Step Guide: How to Install and Use Ollama Ai on macOS for Running LLMs Locally</h1>
                 <p className="mt-6 text-xl leading-8">
                     Running large language models (LLMs) locally has become increasingly popular, offering more privacy and control over data. Ollama is an open-source tool that simplifies this process for macOS users. In this guide, we’ll walk you through the steps to install and use Ollama on your Mac, ensuring you can harness the power of LLMs effortlessly.
                 </p>

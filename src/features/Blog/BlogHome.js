@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import { Helmet } from 'react-helmet';
 
 const posts = [
     {
@@ -73,6 +74,9 @@ const posts = [
 export default function Example() {
     return (
         <div className="bg-white py-6 sm:py-6">
+            <Helmet>
+                <title>Web Design & SEO Blog - West Chester, PA in Chester County - WixenCo </title>
+            </Helmet>
             <Header />
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:max-w-4xl">

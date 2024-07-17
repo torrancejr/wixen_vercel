@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Helmet } from 'react-helmet';
 
 const navigation = [
     { name: 'Contact Me', href: '#contact' },
@@ -14,6 +15,9 @@ export default function Home() {
 
     return (
         <div className="bg-white">
+            <Helmet>
+                <title>Web Design & SEO - West Chester, PA in Chester County - WixenCo</title>
+            </Helmet>
             <header className="absolute inset-x-0 top-0 z-50 lg:top-8">
                 <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
                     <div className="flex items-center lg:flex-1">
