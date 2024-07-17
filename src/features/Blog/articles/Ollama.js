@@ -2,6 +2,7 @@ import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/soli
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 import {Helmet} from "react-helmet";
+import React from "react";
 
 const installCommand = `npm install -D tailwindcss postcss autoprefixer npx tailwindcss init -p`;
 
@@ -20,7 +21,12 @@ export default function Ollama() {
         <div className="bg-white px-6 py-32 lg:px-8">
             <Helmet>
                 <title>Step-by-Step Guide: Ollama Ai - West Chester, PA in Chester County - WixenCo Web Design &
-                    SEO </title>
+                    SEO
+                </title>
+                <meta
+                    name="description"
+                    content="WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
+                />
             </Helmet>
             <Header/>
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">

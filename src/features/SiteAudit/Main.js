@@ -8,6 +8,10 @@ export default function Example() {
         <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
             <Helmet>
                 <title>Site Analyis - West Chester, PA in Chester County - WixenCo Web Design & SEO </title>
+                <meta
+                    name="description"
+                    content="Site Analyis Page - WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
+                />
             </Helmet>
             <div className="absolute inset-0 -z-10 overflow-hidden">
                 <svg
