@@ -121,7 +121,7 @@ export default function Home() {
                             A <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-purple-500">Web Design</span> Company Crafting Websites That Tell Your Story
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            We specialize in creating unique, tailored websites that effectively communicate your brand's narrative and engage your audience.
+                            Based in the heart of West Chester, PA, we specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community.
                         </p>
                         <div className="mt-10 flex items-center gap-x-6">
                             <a
