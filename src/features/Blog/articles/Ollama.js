@@ -18,7 +18,7 @@ const tailwindConfig = `module.exports = {
 
 export default function Ollama() {
     return (
-        <div className="bg-white px-6 py-32 lg:px-8">
+        <div className="bg-white px-6 pb-8 lg:px-8">
             <Helmet>
                 <title>Step-by-Step Guide: Ollama Ai - West Chester, PA in Chester County - WixenCo Web Design &
                     SEO
