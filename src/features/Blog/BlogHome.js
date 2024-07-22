@@ -5,6 +5,22 @@ import { Helmet } from 'react-helmet';
 
 const posts = [
     {
+        id: 6,
+        title: '10 Essential Web Design Trends for 2024 to Elevate Your Website',
+        href: '/blog/top-10-web-design-trends-for-2024',
+        description: 'Discover the top 10 essential web design trends for 2024 that will elevate your website. Stay ahead with the latest design techniques and create engaging, modern websites with WixenCo in West Chester, PA."',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/web-trends-sm.webp',
+        date: 'July 22, 2024',
+        datetime: '2024-07-22',
+        category: { title: 'Web Design', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        },
+    },
+    {
         id: 5,
         title: 'Tour-de-Trike - West Chester, Pa in Chester County - August 9, 2024.',
         href: '/blog/tour-de-trike-adult-tricycle-relay-race-west-chester-pa-2024',

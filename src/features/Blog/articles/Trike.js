@@ -5,7 +5,7 @@ import React from "react";
 
 export default function EventArticle() {
     return (
-        <div className="bg-white px-6 py-32 lg:px-8">
+        <div className="bg-white px-6 pb-8 lg:px-8">
             <Helmet>
                 <title>Trike Race - West Chester, PA in Chester County - WixenCo Web Design & SEO </title>
                 <meta

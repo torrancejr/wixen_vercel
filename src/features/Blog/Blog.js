@@ -2,13 +2,13 @@ import React from 'react';
 
 const posts = [
     {
-        id: 3,
-        title: 'Top CSS Frameworks of 2024.',
-        href: '/blog/top-css-framework-of-2024',
-        description: 'Explore the best CSS frameworks of 2024! Discover top features, advantages, and how they can streamline your web development process. Stay ahead in web design!',
-        imageUrl: 'https://wixenco.s3.amazonaws.com/frameworks.png',
-        date: 'July 15, 2024',
-        datetime: '2024-07-15',
+        id: 2,
+        title: '10 Essential Web Design Trends for 2024 to Elevate Your Website.',
+        href: '/blog/top-10-web-design-trends-for-2024',
+        description: 'Discover the top 10 essential web design trends for 2024 that will elevate your website. Stay ahead with the latest design techniques and create engaging, modern websites with WixenCo in West Chester, PA.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/web-trends.webp',
+        date: 'July 22, 2024',
+        datetime: '2024-07-22',
         category: { title: 'Web Design', href: '#' },
         author: {
             name: 'Ryan Torrance',
@@ -18,14 +18,14 @@ const posts = [
         },
     },
     {
-        id: 2,
-        title: 'Step-by-Step Guide: How to Install and Use Ollama on macOS for Running LLMs Locally.',
-        href: '/blog/how-to-install-and-use-ollama-on-macos',
-        description: 'Learn how to install and use Ollama on macOS with this easy-to-follow guide. Discover how to run large language models locally for enhanced privacy and control. Perfect for developers and AI enthusiasts!',
-        imageUrl: 'https://wixenco.s3.amazonaws.com/ollama.webp',
-        date: 'July 11, 2024',
-        datetime: '2024-07-11',
-        category: { title: 'Ai', href: '#' },
+        id: 3,
+        title: 'Top CSS Frameworks of 2024.',
+        href: '/blog/top-css-framework-of-2024',
+        description: 'Explore the best CSS frameworks of 2024! Discover top features, advantages, and how they can streamline your web development process. Stay ahead in web design!',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/frameworks.png',
+        date: 'July 15, 2024',
+        datetime: '2024-07-15',
+        category: { title: 'Web Design', href: '#' },
         author: {
             name: 'Ryan Torrance',
             role: 'Owner',
