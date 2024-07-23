@@ -17,8 +17,8 @@ export default function BusinessDirectoriesSEO() {
                       content="Top 10 Free and Paid Business Directories to Boost Your SEO - WixenCo Web Design & SEO in West Chester, PA in Chester County"/>
                 <meta property="og:description"
                       content="Discover the top 10 free and paid business directories to boost your SEO and online presence. Elevate your business visibility with WixenCo in West Chester, PA."/>
-                <meta property="og:image" content="https://wixenco.s3.amazonaws.com/business-directories-lg.webp"/>
-                <meta property="og:url" content="https://wixenco.com/your-article-url"/>
+                <meta property="og:image" content="https://wixenco.s3.amazonaws.com/business-335.webp"/>
+                <meta property="og:url" content="https://wixenco.com/blog/top-10-business-directories-to-boost-seo-online-presence"/>
                 <meta property="og:type" content="article"/>
             </Helmet>
             <Header/>
