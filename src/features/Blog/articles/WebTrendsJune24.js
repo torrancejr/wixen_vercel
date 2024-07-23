@@ -7,7 +7,7 @@ export default function WebDesignTrends2024() {
     return (
         <div className="bg-white px-6 pb-8 lg:px-8">
             <Helmet>
-                <title>10 Essential Web Design Trends for 2024 - West Chester, PA in Chester County - WixenCo Web Design & SEO</title>
+                <title>10 Essential Web Design Trends for 2024 - WixenCo Web Design & SEO in West Chester, PA in Chester County </title>
                 <meta
                     name="description"
                     content="Discover the top 10 essential web design trends for 2024 that will elevate your website. Stay ahead with the latest design techniques and create engaging, modern websites with WixenCo in West Chester, PA."
@@ -19,7 +19,7 @@ export default function WebDesignTrends2024() {
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">10 Essential Web Design Trends for 2024 to Elevate Your Website</h1>
                 <figure className="mt-16">
                     <img
-                        alt=""
+                        alt="web trends"
                         src="https://wixenco.s3.amazonaws.com/web-trends-lg.webp"
                         className="aspect-video rounded-xl bg-gray-50 object-cover"
                     />

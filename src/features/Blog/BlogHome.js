@@ -5,6 +5,22 @@ import { Helmet } from 'react-helmet';
 
 const posts = [
     {
+        id: 7,
+        title: 'Top 10 Free and Paid Business Directories to Boost Your SEO',
+        href: '/blog/top-10-business-directories-to-boost-seo-online-presence',
+        description: 'Discover the top 10 free and paid business directories to boost your SEO and online presence. Elevate your business visibility with WixenCo in West Chester, PA.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/business-335.webp',
+        date: 'July 23, 2024',
+        datetime: '2024-07-23',
+        category: { title: 'SEO', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        },
+    },
+    {
         id: 6,
         title: '10 Essential Web Design Trends for 2024 to Elevate Your Website',
         href: '/blog/top-10-web-design-trends-for-2024',
