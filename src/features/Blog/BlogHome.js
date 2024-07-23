@@ -123,7 +123,17 @@ export default function Example() {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>Web Design & SEO Blog - West Chester, PA in Chester County - WixenCo </title>
+                <title>Web Design & SEO Blog - West Chester, PA in Chester County - WixenCo</title>
+                <meta
+                    name="description"
+                    content="Discover the latest in web design and SEO from WixenCo. Stay updated with our expert advice and boost your online presence. Based in West Chester, PA, we specialize in crafting unique, tailored websites that engage your audience."
+                    data-react-helmet="true"
+                />
+                <meta property="og:title" content="Web Design & SEO Blog - West Chester, PA in Chester County - WixenCo" data-react-helmet="true" />
+                <meta property="og:description" content="Discover the latest in web design and SEO from WixenCo. Stay updated with our expert advice and boost your online presence. Based in West Chester, PA, we specialize in crafting unique, tailored websites that engage your audience." data-react-helmet="true" />
+                <meta property="og:image" content="https://wixenco.s3.amazonaws.com/blog-overview.webp" data-react-helmet="true" />
+                <meta property="og:url" content="https://wixenco.com/blog" data-react-helmet="true" />
+                <meta property="og:type" content="website" data-react-helmet="true" />
             </Helmet>
             <Header/>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -30,15 +30,25 @@ const RankChecker = () => {
 
     return (
         <div className="relative isolate bg-white px-6 py-8 sm:py-32 lg:px-8">
-            <title>SEO Tool - Google Index Check - West Chester, PA in Chester County - WixenCo</title>
-            <meta
-                name="description"
-                content="SEO Tool - Google Index Check - WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
-            />
+            <Helmet>
+                <title>SEO Tool - Google Index Check - West Chester, PA in Chester County - WixenCo</title>
+                <meta
+                    name="description"
+                    content="SEO Tool - Google Index Check - WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
+                />
+                <meta property="og:title"
+                      content="SEO Tool - Google Index Check | West Chester, PA - Expertly crafting websites and boosting online presence in Chester County | WixenCo"/>
+                <meta property="og:description"
+                      content="SEO Tool - Google Index Check | Web Design & SEO | West Chester, PA - Elevate your business with expert web design and SEO services from WixenCo, based in Chester County. We specialize in crafting stunning websites and enhancing your online presence."/>
+                <meta property="og:image" content="https://wixenco.s3.amazonaws.com/facebook-og8.png"/>
+                <meta property="og:url" content="https://www.wixenco.com/seo-tools/google-index-checker"/>
+                <meta property="og:type" content="website"/>
+            </Helmet>
             <svg
                 className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
             >
+            </svg>
                 <defs>
                     <pattern
                         id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"

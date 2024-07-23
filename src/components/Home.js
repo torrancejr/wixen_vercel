@@ -23,6 +23,13 @@ export default function Home() {
                     name="description"
                     content="WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
                 />
+                <meta property="og:title"
+                      content="Web Design & SEO Services | WixenCo | West Chester, PA - Expertly crafting websites and boosting online presence in Chester County"/>
+                <meta property="og:description"
+                      content="Web Design & SEO Services | WixenCo | West Chester, PA - Elevate your business with expert web design and SEO services from WixenCo, based in Chester County. We specialize in crafting stunning websites and enhancing your online presence."/>
+                <meta property="og:image" content="https://wixenco.s3.amazonaws.com/facebook-og8.png"/>
+                <meta property="og:url" content="https://www.wixenco.com"/>
+                <meta property="og:type" content="website"/>
             </Helmet>
 
             <div className="relative isolate pt-4 sm:pt-8"> {/* Reduced top padding */}
