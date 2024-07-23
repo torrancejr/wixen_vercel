@@ -7,19 +7,17 @@ export default function BusinessDirectoriesSEO() {
     return (
         <div className="bg-white px-6 pb-8 lg:px-8">
             <Helmet>
-                <title>Top 10 Free and Paid Business Directories to Boost Your SEO - WixenCo Web Design & SEO in West
-                    Chester, PA in Chester County</title>
+                <title>Top 10 Free and Paid Business Directories to Boost Your SEO - Web Design & SEO in West Chester, PA in Chester County - WixenCo </title>
                 <meta
                     name="description"
                     content="Discover the top 10 free and paid business directories to boost your SEO and online presence. Elevate your business visibility with WixenCo in West Chester, PA."
+                    data-react-helmet="true"
                 />
-                <meta property="og:title"
-                      content="Top 10 Free and Paid Business Directories to Boost Your SEO - WixenCo Web Design & SEO in West Chester, PA in Chester County"/>
-                <meta property="og:description"
-                      content="Discover the top 10 free and paid business directories to boost your SEO and online presence. Elevate your business visibility with WixenCo in West Chester, PA."/>
-                <meta property="og:image" content="https://wixenco.s3.amazonaws.com/business-335.webp"/>
-                <meta property="og:url" content="https://wixenco.com/blog/top-10-business-directories-to-boost-seo-online-presence"/>
-                <meta property="og:type" content="article"/>
+                <meta property="og:title" content="Top 10 Free and Paid Business Directories to Boost Your SEO - WixenCo Web Design & SEO in West Chester, PA in Chester County" data-react-helmet="true" />
+                <meta property="og:description" content="Discover the top 10 free and paid business directories to boost your SEO and online presence. Elevate your business visibility with WixenCo in West Chester, PA." data-react-helmet="true" />
+                <meta property="og:image" content="https://wixenco.s3.amazonaws.com/business-directories-lg.webp" data-react-helmet="true" />
+                <meta property="og:url" content="https://wixenco.com/blog/top-10-business-directories-to-boost-seo-online-presence" data-react-helmet="true" />
+                <meta property="og:type" content="article" data-react-helmet="true" />
             </Helmet>
             <Header/>
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
