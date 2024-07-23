@@ -7,11 +7,17 @@ export default function Example() {
     return (
         <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
             <Helmet>
-                <title>Site Analyis - West Chester, PA in Chester County - WixenCo Web Design & SEO </title>
+                <title>Site Analysis - Web Design & SEO in West Chester, PA in Chester County - WixenCo</title>
                 <meta
                     name="description"
-                    content="Site Analyis Page - WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
+                    content="Site Analysis Page - WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community."
+                    data-react-helmet="true"
                 />
+                <meta property="og:title" content="Site Analysis - West Chester, PA in Chester County - WixenCo Web Design & SEO" data-react-helmet="true" />
+                <meta property="og:description" content="Site Analysis Page - WixenCo is a web design and SEO company based in West Chester, PA. We specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community." data-react-helmet="true" />
+                <meta property="og:image" content="https://wixenco.s3.amazonaws.com/site-audit.png" data-react-helmet="true" />
+                <meta property="og:url" content="https://wixenco.com/site-analysis" data-react-helmet="true" />
+                <meta property="og:type" content="website" data-react-helmet="true" />
             </Helmet>
             <div className="absolute inset-0 -z-10 overflow-hidden">
                 <svg
