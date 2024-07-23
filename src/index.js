@@ -13,6 +13,7 @@ import NotFoundPage from './components/NotFoundPage';
 import SiteAudit from "./features/SiteAudit/SiteAudit";
 import RankTool from './features/Tools/RankTool';
 import CssFrameworks from "./features/Blog/articles/CssFrameworks";
+import TopBusinessDirectories from "./features/Blog/articles/TopBusinessDirectories";
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import ReactGA from 'react-ga4';
 
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
     { path: '/blog/top-css-framework-of-2024', element: <CssFrameworks /> },
     { path: '/blog/tour-de-trike-adult-tricycle-relay-race-west-chester-pa-2024', element: <Trike />},
     { path: '/blog/top-10-web-design-trends-for-2024', element: <WebDesignTrends2024 />},
+    { path: '/blog/top-10-business-directories-to-boost-seo-online-presence', element: <TopBusinessDirectories />},
     { path: '*', element: <NotFoundPage /> },
 ]);
 
