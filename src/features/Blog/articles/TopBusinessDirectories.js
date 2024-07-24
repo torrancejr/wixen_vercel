@@ -18,15 +18,18 @@ export default function BusinessDirectoriesSEO() {
                 <meta property="og:image" content="https://wixenco.s3.amazonaws.com/business-directories-lg.webp" data-react-helmet="true" />
                 <meta property="og:url" content="https://wixenco.com/blog/top-10-business-directories-to-boost-seo-online-presence" data-react-helmet="true" />
                 <meta property="og:type" content="article" data-react-helmet="true" />
+                <meta name="twitter:card" content="summary_large_image" data-react-helmet="true" />
+                <meta name="twitter:title" content="Top 10 Free and Paid Business Directories to Boost Your SEO - WixenCo Web Design & SEO in West Chester, PA in Chester County" data-react-helmet="true" />
+                <meta name="twitter:description" content="Discover the top 10 free and paid business directories to boost your SEO and online presence. Elevate your business visibility with WixenCo in West Chester, PA." data-react-helmet="true" />
+                <meta name="twitter:image" content="https://wixenco.s3.amazonaws.com/business-directories-lg.webp" data-react-helmet="true" />
             </Helmet>
             <Header/>
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
                 <p className="text-base font-semibold leading-7 text-indigo-600">Introducing</p>
-                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Top 10 Free and Paid
-                    Business Directories to Boost Your SEO and Online Presence</h1>
+                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Top 10 Free and Paid Business Directories to Boost Your SEO and Online Presence</h1>
                 <figure className="mt-16">
                     <img
-                        alt=""
+                        alt="Top 10 Free and Paid Business Directories"
                         src="https://wixenco.s3.amazonaws.com/business-directories-lg.webp"
                         className="aspect-video rounded-xl bg-gray-50 object-cover"
                     />
