@@ -30,7 +30,55 @@ export default function Home() {
                 <meta property="og:image" content="https://wixenco.s3.amazonaws.com/facebook-og8.png"/>
                 <meta property="og:url" content="https://www.wixenco.com"/>
                 <meta property="og:type" content="website"/>
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "LocalBusiness",
+                        "name": "Wixenco",
+                        "url": "https://wixenco.com",
+                        "logo": "/favicon.svg",
+                        "image": "https://wixenco.s3.amazonaws.com/facebook-og8.png",
+                        "description": "Web Design & SEO Services | West Chester, PA - Expertly crafting websites and boosting online presence in Chester County | WixenCo | .",
+                        "telephone": "610-656-5293",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "West Chester",
+                            "addressLocality": "West Chester",
+                            "addressRegion": "PA",
+                            "postalCode": "19380",
+                            "addressCountry": "US"
+                        },
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+1-610-656-5293",
+                            "contactType": "Customer Service"
+                        },
+                        "founder": {
+                            "@type": "Person",
+                            "name": "Ryan Torrance"
+                        },
+                        "sameAs": [
+                            "https://www.twitter.com/wixenco",
+                            "https://www.instagram.com/wixenco"
+                        ],
+                        "areaServed": {
+                            "@type": "Place",
+                            "name": "West Chester, PA"
+                        },
+                        "service": [
+                            {
+                                "@type": "Service",
+                                "name": "Website Design"
+                            },
+                            {
+                                "@type": "Service",
+                                "name": "SEO Services"
+                            }
+                        ]
+                    })}
+                </script>
             </Helmet>
+
 
             <div className="relative isolate pt-4 sm:pt-8"> {/* Reduced top padding */}
                 <svg
@@ -46,7 +94,7 @@ export default function Home() {
                             y={-1}
                             patternUnits="userSpaceOnUse"
                         >
-                            <path d="M100 200V.5M.5 .5H200" fill="none" />
+                            <path d="M100 200V.5M.5 .5H200" fill="none"/>
                         </pattern>
                     </defs>
                     <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
@@ -55,15 +103,21 @@ export default function Home() {
                             strokeWidth={0}
                         />
                     </svg>
-                    <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+                    <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"/>
                 </svg>
-                <div className="mx-auto max-w-7xl px-6 py-12 sm:py-20 lg:py-28 lg:flex lg:items-center lg:gap-x-10 lg:px-8"> {/* Adjusted padding */}
+                <div
+                    className="mx-auto max-w-7xl px-6 py-12 sm:py-20 lg:py-28 lg:flex lg:items-center lg:gap-x-10 lg:px-8"> {/* Adjusted padding */}
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                         <h1 className="max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                            A <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-purple-500">Web Design</span> Company Crafting Websites That Tell Your Story
+                            A <span
+                            className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-purple-500">Web Design</span> Company
+                            Crafting Websites That Tell Your Story
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Based in the heart of West Chester, PA, we specialize in crafting unique, tailored websites that effectively communicate your brand's narrative and engage your audience. Let us help you captivate your audience with a website that tells your story and strengthens your connection with the community.
+                            Based in the heart of West Chester, PA, we specialize in crafting unique, tailored websites
+                            that effectively communicate your brand's narrative and engage your audience. Let us help
+                            you captivate your audience with a website that tells your story and strengthens your
+                            connection with the community.
                         </p>
                         <div className="mt-10 flex items-center gap-x-6">
                             <a
