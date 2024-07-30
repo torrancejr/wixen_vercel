@@ -4,6 +4,37 @@ import Header from "../../../components/Header";
 import React from "react";
 
 export default function ChatGPTVoiceModeArticle() {
+    const ldJson = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "ChatGPT’s Upgraded Voice Mode is Coming Soon!",
+        "author": {
+            "@type": "Person",
+            "name": "Ryan Torrance",
+            "url": "https://www.wixenco.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "WixenCo",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://wixenco.s3.amazonaws.com/wixen-logo.png"
+            }
+        },
+        "datePublished": "2024-07-29",
+        "dateModified": "2024-07-29",
+        "image": "https://wixenco.s3.amazonaws.com/chatgpt-voice-mode.webp",
+        "articleSection": "Technology",
+        "url": "https://www.wixenco.com/blog/chatgpt-upgraded-voice-mode-coming-soon",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.wixenco.com/blog/chatgpt-upgraded-voice-mode-coming-soon"
+        },
+        "description": "Discover the upcoming upgrades to ChatGPT's voice mode. Learn about new features, improvements, and how this will enhance your AI interactions. Stay tuned for the latest advancements from OpenAI with WixenCo.",
+        "keywords": "ChatGPT, voice mode, AI, OpenAI, voice interaction, AI upgrades",
+        "articleBody": "At WixenCo, we are always thrilled to bring you the latest advancements in technology to help enhance your digital experiences. Today, we’re excited to share some fantastic news from OpenAI about the upcoming launch of ChatGPT’s upgraded Voice Mode. This feature promises to revolutionize how we interact with AI, making conversations more natural and seamless than ever before."
+    };
+
     return (
         <div className="bg-white px-6 pb-8 lg:px-8">
             <Helmet>
@@ -12,6 +43,9 @@ export default function ChatGPTVoiceModeArticle() {
                     name="description"
                     content="Discover the upcoming upgrades to ChatGPT's voice mode. Learn about new features, improvements, and how this will enhance your AI interactions. Stay tuned!"
                 />
+                <script type="application/ld+json">
+                    {JSON.stringify(ldJson)}
+                </script>
             </Helmet>
             <Header/>
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
@@ -133,7 +167,6 @@ export default function ChatGPTVoiceModeArticle() {
                         </a>
                     </li>
                 </ul>
-
             </div>
         </div>
     );
