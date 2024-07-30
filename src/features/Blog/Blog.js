@@ -35,20 +35,23 @@ const posts = [
     },
     {
         id: 1,
-        title: 'Tour-de-Trike - West Chester, Pa in Chester County - August 9, 2024.',
-        href: '/blog/tour-de-trike-adult-tricycle-relay-race-west-chester-pa-2024',
-        description: 'Join us for the Tour-de-Trike on Gay Street in West Chester on Friday, August 9, 2024, from 3:30pm-6:00pm. Enjoy adult-sized tricycle races, with registration starting at 3:00pm. Rain date: August 16.',
-        imageUrl: 'https://wixenco.s3.amazonaws.com/trike.webp',
-        date: 'July 17, 2024',
-        datetime: '2024-07-17',
-        category: { title: 'West Chester Events', href: '#' },
-        author: {
-            name: 'Ryan Torrance',
-            role: 'Owner',
-            href: '#',
-            imageUrl: ''
+        title: "ChatGPT's Upgraded Voice Mode is Coming Soon!",
+        href: "/blog/chatgpt-upgraded-voice-mode-coming-soon",
+        description: "Discover the upcoming upgrades to ChatGPT's voice mode. Learn about new features, improvements, and how this will enhance your AI interactions. Stay tuned for the latest advancements from OpenAI with WixenCo.",
+        imageUrl: "https://wixenco.s3.amazonaws.com/voice-mode-sm.webp",
+        date: "July 29, 2024",
+        datetime: "2024-07-29",
+        category: {
+            title: "Technology",
+            href: "#"
         },
-    },
+        author: {
+            name: "Ryan Torrance",
+            role: "Owner",
+            href: "#",
+            imageUrl: "" // Add the URL of the author's image if available
+        },
+    }
     // More posts...
 ];
 

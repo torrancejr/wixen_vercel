@@ -5,6 +5,25 @@ import { Helmet } from 'react-helmet';
 
 const posts = [
     {
+        id: 8,
+        title: "ChatGPT's Upgraded Voice Mode is Coming Soon!",
+        href: "/blog/chatgpt-upgraded-voice-mode-coming-soon",
+        description: "Discover the upcoming upgrades to ChatGPT's voice mode. Learn about new features, improvements, and how this will enhance your AI interactions. Stay tuned for the latest advancements from OpenAI with WixenCo.",
+        imageUrl: "https://wixenco.s3.amazonaws.com/voice-mode-sm.webp",
+        date: "July 29, 2024",
+        datetime: "2024-07-29",
+        category: {
+            title: "Technology",
+            href: "#"
+        },
+        author: {
+            name: "Ryan Torrance",
+            role: "Owner",
+            href: "#",
+            imageUrl: "" // Add the URL of the author's image if available
+        },
+    },
+    {
         id: 7,
         title: 'Top 10 Free and Paid Business Directories to Boost Your SEO',
         href: '/blog/top-10-business-directories-to-boost-seo-online-presence',
