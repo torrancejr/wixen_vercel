@@ -60,9 +60,11 @@ export default function EventArticle() {
                     <p className="mt-6">
                         Join us on Gay Street, between Church St. and Darlington St., for the Tour-de-Trike on Friday,
                         August 9, 2024, from 3:30 pm to 6:00 pm. Registration opens at 3:00 pm, with the first race
-                        starting at 3:30 pm. In case of rain, the event will be postponed to Friday, August 16, at the
-                        same time.
+                        starting at 3:30 pm. <strong>In case of rain, the event will be postponed to Friday, August 16,
+                        at the
+                        same time.</strong>
                     </p>
+
                     <p className="mt-8">
                         Please note: Gay Street will be closed to vehicles every weekend from Friday, May 3, to Sunday,
                         September 29, for the Gay Street Open-Air Market.
