@@ -5,6 +5,22 @@ import { Helmet } from 'react-helmet';
 
 const posts = [
     {
+        id: 9,
+        title: 'West Chester Christmas Parade: Celebrating the Season in Style',
+        href: '/blog/west-chester-christmas-parade-2024',
+        description: 'Join us for the West Chester Christmas Parade, a cherished tradition that lights up the holiday season in West Chester, PA. Discover the magic of the parade, tree lighting, and other festive events during the Chester County Hospital Lights Up Holiday Weekends.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/parade-xs.webp',
+        date: 'August 13, 2024',
+        datetime: '2024-08-13',
+        category: { title: 'Events', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        },
+    },
+    {
         id: 8,
         title: "ChatGPT's Upgraded Voice Mode is Coming Soon!",
         href: "/blog/chatgpt-upgraded-voice-mode-coming-soon",

@@ -2,14 +2,14 @@ import React from 'react';
 
 const posts = [
     {
-        id: 2,
-        title: '10 Essential Web Design Trends for 2024 to Elevate Your Website.',
-        href: '/blog/top-10-web-design-trends-for-2024',
-        description: 'Discover the top 10 essential web design trends for 2024 that will elevate your website. Stay ahead with the latest design techniques and create engaging, modern websites with WixenCo in West Chester, PA.',
-        imageUrl: 'https://wixenco.s3.amazonaws.com/web-trends.webp',
-        date: 'July 22, 2024',
-        datetime: '2024-07-22',
-        category: { title: 'Web Design', href: '#' },
+        id: 3,
+        title: 'West Chester Christmas Parade: Celebrating the Season in Style',
+        href: '/blog/west-chester-christmas-parade-2024',
+        description: 'Join us for the West Chester Christmas Parade, a cherished tradition that lights up the holiday season in West Chester, PA. Discover the magic of the parade, tree lighting, and other festive events during the Chester County Hospital Lights Up Holiday Weekends.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/parade-sm.webp',
+        date: 'August 13, 2024',
+        datetime: '2024-08-13',
+        category: { title: 'Events', href: '#' },
         author: {
             name: 'Ryan Torrance',
             role: 'Owner',
@@ -18,7 +18,7 @@ const posts = [
         },
     },
     {
-        id: 3,
+        id: 2,
         title: 'Top 10 Free and Paid Business Directories to Boost Your SEO',
         href: '/blog/top-10-business-directories-to-boost-seo-online-presence',
         description: 'Discover the top 10 free and paid business directories to boost your SEO and online presence. Elevate your business visibility with WixenCo in West Chester, PA.',
