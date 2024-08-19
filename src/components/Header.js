@@ -26,12 +26,12 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Contact Me', href: '#contact' },
-    {
-        name: 'Tools',
-        children: [
-            { name: 'Google Index Checker', href: '/seo-tools/google-index-checker' }
-        ]
-    },
+    // {
+    //     name: 'Tools',
+    //     children: [
+    //         { name: 'Google Index Checker', href: '/seo-tools/google-index-checker' }
+    //     ]
+    // },
     { name: 'Free Site Analysis', href: '/site-analysis' },
     { name: 'Blog', href: '/blog' },
 ];
