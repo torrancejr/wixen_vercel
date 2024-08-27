@@ -18,23 +18,23 @@ const posts = [
         },
     },
     {
-        id: 2,
-        title: 'Top 10 Free and Paid Business Directories to Boost Your SEO',
-        href: '/blog/top-10-business-directories-to-boost-seo-online-presence',
-        description: 'Discover the top 10 free and paid business directories to boost your SEO and online presence. Elevate your business visibility with WixenCo in West Chester, PA.',
-        imageUrl: 'https://wixenco.s3.amazonaws.com/business-335.webp',
-        date: 'July 23, 2024',
-        datetime: '2024-07-23',
-        category: { title: 'SEO', href: '#' },
+        id: 1, // Increment the ID if this is a new article
+        title: 'Top 10 Free Website Image Websites for Web Design',
+        href: '/blog/top-10-free-website-image-websites',
+        description: 'Discover the top 10 free website image websites for web design. Enhance your projects with high-quality visuals from these sources, perfect for improving your SEO and attracting visitors.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/summer-gal.webp',
+        date: 'August 27, 2024',  // Today's date or the date of publication
+        datetime: '2024-08-27',
+        category: { title: 'Web Design', href: '#' },
         author: {
             name: 'Ryan Torrance',
             role: 'Owner',
-            href: '#',
-            imageUrl: ''
+            href: 'https://www.wixenco.com/about', // Link to your author page or about section
+            imageUrl: 'https://wixenco.s3.amazonaws.com/ryan-torrance-photo.webp'  // Update with a valid image URL of the author if available
         },
     },
     {
-        id: 1,
+        id: 2,
         title: "ChatGPT's Upgraded Voice Mode is Coming Soon!",
         href: "/blog/chatgpt-upgraded-voice-mode-coming-soon",
         description: "Discover the upcoming upgrades to ChatGPT's voice mode. Learn about new features, improvements, and how this will enhance your AI interactions. Stay tuned for the latest advancements from OpenAI with WixenCo.",

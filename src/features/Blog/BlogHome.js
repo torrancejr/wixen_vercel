@@ -5,6 +5,22 @@ import { Helmet } from 'react-helmet';
 
 const posts = [
     {
+        id: 10, // Increment the ID if this is a new article
+        title: 'Top 10 Free Website Image Websites for Web Design',
+        href: '/blog/top-10-free-website-image-websites',
+        description: 'Discover the top 10 free website image websites for web design. Enhance your projects with high-quality visuals from these sources, perfect for improving your SEO and attracting visitors.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/summer-gal.webp',
+        date: 'August 27, 2024',  // Today's date or the date of publication
+        datetime: '2024-08-27',
+        category: { title: 'Web Design', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: 'https://www.wixenco.com/about', // Link to your author page or about section
+            imageUrl: 'https://wixenco.s3.amazonaws.com/ryan-torrance-photo.webp'  // Update with a valid image URL of the author if available
+        },
+    },
+    {
         id: 9,
         title: 'West Chester Christmas Parade: Celebrating the Season in Style',
         href: '/blog/west-chester-christmas-parade-2024',
