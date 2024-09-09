@@ -5,6 +5,25 @@ import { Helmet } from 'react-helmet';
 
 const posts = [
     {
+        id: 11,
+        title: 'Top 10 Haunted Houses in Chester County: Ranked for a Thrilling Halloween',
+        href: '/blog/top-10-haunted-houses-chester-county',
+        description: 'Discover the top 10 haunted houses in Chester County and nearby areas, ranked from scariest to spookiest. Explore these Halloween attractions for a night of thrilling adventure.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/hauntedhouse.webp',
+        date: 'September 9, 2024',
+        datetime: '2024-09-09',
+        category: {
+            title: 'Halloween Attractions',
+            href: '#'
+        },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        }
+    },
+    {
         id: 10, // Increment the ID if this is a new article
         title: 'Top 10 Free Website Image Websites for Web Design',
         href: '/blog/top-10-free-website-image-websites',

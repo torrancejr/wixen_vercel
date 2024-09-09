@@ -17,6 +17,7 @@ import ChatGptJulyTwentyFour from "./features/Blog/articles/ChatGptJulyTwentyFou
 import TopBusinessDirectories from "./features/Blog/articles/TopBusinessDirectories";
 import ChristmasParadeTwentyFour from "./features/Blog/articles/ChristmasParadeTwentyFour";
 import TopTenImageSites from "./features/Blog/articles/TopTenImageSites";
+import HauntedHousesTwentyFour from "./features/Blog/articles/HauntedHousesTwentyFour";
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import ReactGA from 'react-ga4';
 
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
     { path: '/blog/chatgpt-upgraded-voice-mode-coming-soon', element: <ChatGptJulyTwentyFour />},
     { path: '/blog/west-chester-christmas-parade-2024', element: <ChristmasParadeTwentyFour />},
     { path: '/blog/top-10-free-website-image-websites', element: <TopTenImageSites />},
+    { path: '/blog/top-10-haunted-houses-chester-county', element: <HauntedHousesTwentyFour />},
     { path: '*', element: <NotFoundPage /> },
 ]);
 
