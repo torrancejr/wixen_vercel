@@ -35,23 +35,24 @@ const posts = [
     },
     {
         id: 2,
-        title: "ChatGPT's Upgraded Voice Mode is Coming Soon!",
-        href: "/blog/chatgpt-upgraded-voice-mode-coming-soon",
-        description: "Discover the upcoming upgrades to ChatGPT's voice mode. Learn about new features, improvements, and how this will enhance your AI interactions. Stay tuned for the latest advancements from OpenAI with WixenCo.",
-        imageUrl: "https://wixenco.s3.amazonaws.com/voice-mode-sm.webp",
-        date: "July 29, 2024",
-        datetime: "2024-07-29",
+        title: 'Top 10 Haunted Houses in Chester County: Ranked for a Thrilling Halloween',
+        href: '/blog/top-10-haunted-houses-chester-county',
+        description: 'Discover the top 10 haunted houses in Chester County and nearby areas, ranked from scariest to spookiest. Explore these Halloween attractions for a night of thrilling adventure.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/hauntedhouse.webp',
+        date: 'September 9, 2024',
+        datetime: '2024-09-09',
         category: {
-            title: "Technology",
-            href: "#"
+            title: 'Halloween Attractions',
+            href: '#'
         },
         author: {
-            name: "Ryan Torrance",
-            role: "Owner",
-            href: "#",
-            imageUrl: "" // Add the URL of the author's image if available
-        },
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        }
     }
+
     // More posts...
 ];
 
