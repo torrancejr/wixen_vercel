@@ -5,6 +5,7 @@ const navigation = {
     main: [
         { name: 'Home', href: '/' },
         { name: 'Blog', href: '/blog' },
+        { name: 'Terms', href: '/terms-of-service' }
     ],
     social: [
         {
