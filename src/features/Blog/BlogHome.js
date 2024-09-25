@@ -5,6 +5,22 @@ import { Helmet } from 'react-helmet';
 
 const posts = [
     {
+        id: 12,
+        title: 'How to Create a Google Business Profile: A Step-by-Step Guide',
+        href: '/blog/how-to-create-google-business-profile',
+        description: 'Learn how to create a Google Business Profile with this step-by-step guide. Optimize your online presence and attract more customers by making your business visible on Google Maps and local search results.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/googlebusiness.webp',
+        date: 'September 25, 2024',
+        datetime: '2024-09-25',
+        category: { title: 'Digital Marketing', href: '#' },
+        author: {
+            name: 'Ryan Torrance',
+            role: 'Owner',
+            href: '#',
+            imageUrl: ''
+        },
+    },
+    {
         id: 11,
         title: 'Top 10 Haunted Houses in Chester County: Ranked for a Thrilling Halloween',
         href: '/blog/top-10-haunted-houses-chester-county',

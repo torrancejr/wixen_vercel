@@ -18,6 +18,7 @@ import TopBusinessDirectories from "./features/Blog/articles/TopBusinessDirector
 import ChristmasParadeTwentyFour from "./features/Blog/articles/ChristmasParadeTwentyFour";
 import TopTenImageSites from "./features/Blog/articles/TopTenImageSites";
 import HauntedHousesTwentyFour from "./features/Blog/articles/HauntedHousesTwentyFour";
+import GoogleBusiness from "./features/Blog/articles/GoogleBusiness"
 import TermsOfServicePage from "./components/Terms";
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import ReactGA from 'react-ga4';
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
     { path: '/blog/west-chester-christmas-parade-2024', element: <ChristmasParadeTwentyFour />},
     { path: '/blog/top-10-free-website-image-websites', element: <TopTenImageSites />},
     { path: '/blog/top-10-haunted-houses-chester-county', element: <HauntedHousesTwentyFour />},
+    { path: '/blog/how-to-create-google-business-profile', element: <GoogleBusiness />},
     { path: '/terms-of-service', element: <TermsOfServicePage />},
     { path: '*', element: <NotFoundPage /> },
 ]);

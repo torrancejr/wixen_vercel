@@ -3,13 +3,13 @@ import React from 'react';
 const posts = [
     {
         id: 3,
-        title: 'West Chester Christmas Parade: Celebrating the Season in Style',
-        href: '/blog/west-chester-christmas-parade-2024',
-        description: 'Join us for the West Chester Christmas Parade, a cherished tradition that lights up the holiday season in West Chester, PA. Discover the magic of the parade, tree lighting, and other festive events during the Chester County Hospital Lights Up Holiday Weekends.',
-        imageUrl: 'https://wixenco.s3.amazonaws.com/parade-sm.webp',
-        date: 'August 13, 2024',
-        datetime: '2024-08-13',
-        category: { title: 'Events', href: '#' },
+        title: 'How to Create a Google Business Profile: A Step-by-Step Guide',
+        href: '/blog/how-to-create-google-business-profile',
+        description: 'Learn how to create a Google Business Profile with this step-by-step guide. Optimize your online presence and attract more customers by making your business visible on Google Maps and local search results.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/googlebusiness.webp',
+        date: 'September 25, 2024',
+        datetime: '2024-09-25',
+        category: { title: 'Digital Marketing', href: '#' },
         author: {
             name: 'Ryan Torrance',
             role: 'Owner',
