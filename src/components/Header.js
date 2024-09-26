@@ -25,6 +25,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 
 const navigation = [
     { name: 'Home', href: '/' },
+    { name: 'Our Work', href: '/our-work' },
     { name: 'Contact Me', href: '#contact' },
     // {
     //     name: 'Tools',

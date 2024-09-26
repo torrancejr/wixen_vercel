@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import BlogHome from './features/Blog/BlogHome';
+import Feature from "./components/Feature";
 import Tailwind from './features/Blog/articles/TailwindBlog';
 import Stucture from './features/Blog/articles/StructuredData';
 import Ollama from "./features/Blog/articles/Ollama";
@@ -28,6 +29,7 @@ ReactGA.initialize('G-1707PEGC4M');
 const router = createBrowserRouter([
     { path: '/', element: <App /> },
     { path: '/blog', element: <BlogHome /> },
+    { path: '/our-work', element: <Feature />},
     { path: '/site-analysis', element: <SiteAudit /> },
     { path: '/seo-tools/google-index-checker', element: <RankTool /> },
     { path: '/blog/how-to-add-tailwindcss-to-react-app', element: <Tailwind /> },
