@@ -5,6 +5,22 @@ import { Helmet } from 'react-helmet';
 
 const posts = [
     {
+        id: 13,
+        title: 'Effective Font Identification Techniques for Web Designers',
+        href: '/blog/effective-font-identification-techniques',
+        description: 'Learn how to identify fonts on websites using browser tools, extensions, and mobile apps. Enhance your web design projects with the perfect typography.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/font-identification-techniques.webp',
+        date: 'October 1, 2024',
+        datetime: '2024-10-01',
+        category: { title: 'Web Design', href: '#' },
+        author: {
+            name: 'Ryan T.',
+            role: 'Web Designer',
+            href: '#',
+            imageUrl: ''
+        },
+    },
+    {
         id: 12,
         title: 'How to Create a Google Business Profile: A Step-by-Step Guide',
         href: '/blog/how-to-create-google-business-profile',
