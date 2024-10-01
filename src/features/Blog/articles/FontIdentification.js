@@ -3,6 +3,7 @@ import React from 'react'
 import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid';
 import { Helmet } from 'react-helmet';
 import Header from "../../../components/Header";
+import Footer from '../../../components/Footer';
 
 export default function EffectiveFontIdentificationTechniques() {
     const ldJson = {
@@ -203,6 +204,8 @@ export default function EffectiveFontIdentificationTechniques() {
                     </li>
                 </ul>
             </div>
+            <Footer/>
         </div>
+
     );
 }
