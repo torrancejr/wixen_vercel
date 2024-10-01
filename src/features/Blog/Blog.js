@@ -18,19 +18,19 @@ const posts = [
         },
     },
     {
-        id: 1, // Increment the ID if this is a new article
-        title: 'Top 10 Free Website Image Websites for Web Design',
-        href: '/blog/top-10-free-website-image-websites',
-        description: 'Discover the top 10 free website image websites for web design. Enhance your projects with high-quality visuals from these sources, perfect for improving your SEO and attracting visitors.',
-        imageUrl: 'https://wixenco.s3.amazonaws.com/summer-gal.webp',
-        date: 'August 27, 2024',  // Today's date or the date of publication
-        datetime: '2024-08-27',
+        id: 1,
+        title: 'Effective Font Identification Techniques for Web Designers',
+        href: '/blog/effective-font-identification-techniques',
+        description: 'Learn how to identify fonts on websites using browser tools, extensions, and mobile apps. Enhance your web design projects with the perfect typography.',
+        imageUrl: 'https://wixenco.s3.amazonaws.com/font-identification-techniques.webp',
+        date: 'October 1, 2024',
+        datetime: '2024-10-01',
         category: { title: 'Web Design', href: '#' },
         author: {
-            name: 'Ryan Torrance',
-            role: 'Owner',
-            href: 'https://www.wixenco.com/about', // Link to your author page or about section
-            imageUrl: 'https://wixenco.s3.amazonaws.com/ryan-torrance-photo.webp'  // Update with a valid image URL of the author if available
+            name: 'Ryan T.',
+            role: 'Web Designer',
+            href: '#',
+            imageUrl: ''
         },
     },
     {
